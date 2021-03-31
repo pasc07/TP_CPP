@@ -4,7 +4,7 @@
 #include <donnees_borne.h>
 #include <memoire_borne.h>
  /**
- * \class bouton 
+ * \class Boutons
  * \file boutons.h boutons.cpp
  * \brief Cette classe permet de gerer les appuis sur les 
  boutons a travers l'utilisation des pointeurs et des acces memoire
