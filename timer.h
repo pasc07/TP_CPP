@@ -11,12 +11,18 @@
 */
 
 #include <iostream>
-#include <donnees_bornes.h>
-#include <
+#include <donnees_borne.h>
+#include <memoire_borne.h>
+#include <lcarte.h>
+
 
 class Timer
 {
 	private:
+		entrees *io;
+		int shmid;
+		int depart_timer;
+		int fin_timer;
 	
 	public:
 	/**
@@ -40,10 +46,10 @@ class Timer
   	* \param void 
   	* \return void
   	*/
-    	void valeur();
+    	int valeur();
     	/**
   	* \fn void pause( int s);
-  	* \brief Permet de faire une pause de s temps dans l'execution
+  	* \brief Permet de faire une pause de s secondes dans l'execution
   	des taches par le systemes
   	* \param int s 
   	* \return void

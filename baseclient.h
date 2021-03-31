@@ -29,6 +29,7 @@ class BaseClient
   public : 
   	BaseClient(){
   	} //constructeur de la classse
+  	
   	/**
   	* \fn int authentifier();
   	* \brief Methode qui permet d'authentifier un client
