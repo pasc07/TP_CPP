@@ -9,22 +9,24 @@
 * \version 1.0
 */
 #include <donnees_borne.h>
-#include <memoire_borne.h>
-#include <stdio.h>
-#include <timer.h>
-#include <time.h>
-#include <unistd.h>
+#include <iostream>
+#include <lcarte.h>
+#include "timer.h"
+#include "time.h"
+#include "unistd.h"
+
 
 class Voyants
 {
 	private:
 		entrees *leds;
+		int shmid; /*Share memory id */
 	public:
 		Voyants();
 		
 		/*
 		* \fn void initialier();
-		* \brief Permet de configurer l'acces a la memoire partagee
+		* \brief Permet de configurer l'acces a la memoire partagee a l'aide  la variable shmid (share memory id) pour permettre de communiquer avec la carte. Un message d'erreur s'affiche en cas de probleme d'acces.
 		* \param void
 		* \return void
 		*/
@@ -36,11 +38,11 @@ class Voyants
 		* \param int ledCoul: qui represente la couleur a afficher
 		* \return void
 		*/
-    	void set_charge(int ledCoul);
-    	void blink_charge(int ledCoul);
-    	void set_dispo(int ledCout);
-    	void set_defaut(int ledCout);
-    	void blink_defaut(int ledCout);
+    	void set_charge(led ledCoul);
+    	void set_dispo(led ledCoul);
+    	void blink_charge();
+
+    	void set_defaut();
     	void etat_dispo();
     	//methode ajouter
     	
@@ -48,8 +50,8 @@ class Voyants
     	* \brief Les fonctions suivantes ont ete ajoutee
     	pour plus de commoditer d'ecriture du programme de gestion
     	*/
-		void voyants_initialiser();
-		void voyants_blink_defaut();
+		void initialiser();
+		void blink_defaut();
     	
     	
 
