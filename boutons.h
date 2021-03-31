@@ -1,15 +1,19 @@
 #ifndef BOUTONS_H
 #define BOUTONS_H
-
-
-class Boutons
-{
-    void initialier();
-    void charge();
-    void reset_charge();
-    void stop();
-    reset_stop();
-
-};
+ /*
+ * \class bouton 
+ * \file bouton.h
+ * \brief Cette classe permet de 
+ */
+ class Boutons{
+ 	private:
+ 	
+ 	public:
+ 		Boutons(); /*constructeur de la classe boutons*/
+ 		
+ 		int 
+ 	
+ 
+ };
 
 #endif
