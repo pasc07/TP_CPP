@@ -12,13 +12,13 @@ void Boutons::initialiser(){
 	}
 }
 
-	int Boutons::boutons_charge(){
+	int Boutons::charge(){
 		int status;
 		status=bouton->bouton_charge;
 		bouton->bouton_charge=0;
 		return status;
 	}
-	int Boutons::boutons_stop()
+	int Boutons::stop()
 	{
 		int status;
 		status=bouton->bouton_stop;

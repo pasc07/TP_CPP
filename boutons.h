@@ -17,19 +17,19 @@
  		Boutons(); /*constructeur de la classe boutons*/
  		
  		/**
- 		* \fn void boutons_initialiser();
+ 		* \fn void initialiser();
  		* \brief Permet d'initialiser les boutons
  		*/ 		
 		void initialiser();
 		
  		/**
- 		* \fn int boutons_charge();
+ 		* \fn int charge();
  		* \brief Permet d'initialiser les boutons
  		* \param void
  		* \return int
  		*/ 
-		int boutons_charge();
-		int boutons_stop();
+		int charge();
+		int stop();
  	
  
  };
