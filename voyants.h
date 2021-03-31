@@ -24,7 +24,7 @@ class Voyants
 	public:
 		Voyants();
 		
-		/*
+		/**
 		* \fn void initialier();
 		* \brief Permet de configurer l'acces a la memoire partagee a l'aide  la variable shmid (share memory id) pour permettre de communiquer avec la carte. Un message d'erreur s'affiche en cas de probleme d'acces.
 		* \param void
@@ -32,7 +32,7 @@ class Voyants
 		*/
     	void initialier();
     	
-  		/*
+  		/**
 		* \fn void set_charge(int ledCoul);
 		* \brief Allume le voyant charge quand le vehicule charge
 		* \param int ledCoul: qui represente la couleur a afficher
@@ -46,7 +46,7 @@ class Voyants
     	void etat_dispo();
     	//methode ajouter
     	
-    	/*
+    	/**
     	* \brief Les fonctions suivantes ont ete ajoutee
     	pour plus de commoditer d'ecriture du programme de gestion
     	*/
