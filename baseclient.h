@@ -24,7 +24,7 @@ class BaseClient
   private:
 	int numero;
 	Client client;
-	vector<Client> dbClient;
+	//vector<Client> dbClient;
 	
   public : 
   	BaseClient(){
