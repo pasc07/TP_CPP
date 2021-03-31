@@ -12,13 +12,19 @@
 #include <lcarte.h>
 #include <iostream>
 #define DIM 20; /* ! ou utiliser des tableau dynamique*/
+#include <string>
+#include "Client.h"
+
+using namespace std;
 
 
 
 class BaseClient
-{private:
+{
+  private:
 	int numero;
-	string[] clients;
+	Client client;
+	vector<Client> dbClient;
 	
   public : 
   	BaseClient(){
@@ -30,9 +36,9 @@ class BaseClient
   	* \param void , pas de paramettre 
   	* \return Booleen
   	*/
-	Boolean authentifier(num_carte);
+	int authentifier(int num_carte);
 	void reprise();
-	int recherche(int num) /* num represente le numero de carte du client*/
+	int recherche(int num) ;/* num represente le numero de carte du client*/
 };
 
 #endif // BASECLIENT

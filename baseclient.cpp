@@ -4,8 +4,9 @@
 
 using namespace std;
 
-Boolean BaseClient::authentifier(int num_carte){
+int BaseClient::authentifier(int num_carte){
 	if(BaseClient::recherche(num_carte)==1)
+	
 		return 1;
 		else return 0;
 }
@@ -16,7 +17,7 @@ void BaseClient::reprise(){
 
 }
 
-int BaseClient::recherche(){
+int BaseClient::recherche(int num){
 	int i=0;
 	return 1;
 }
