@@ -4,4 +4,5 @@ Client.o: Client.cpp Client.h
 timer.o: timer.cpp timer.h
 boutons.o: boutons.cpp boutons.h
 voyants.o: voyants.cpp voyants.h timer.h
+prise.o: prise.cpp prise.h
 borne.o: borne.cpp lecteurcarte.h voyants.h timer.h
