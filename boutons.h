@@ -9,7 +9,7 @@
  * \brief Cette classe permet de gerer les appuis sur les 
  boutons a travers l'utilisation des pointeurs et des acces memoire
  */
- class Boutons{
+ class Boutons {
  	private:
  		int shmid;
 		entrees* bouton;

@@ -17,6 +17,7 @@ class GenerateurSave
 {
 	private:
 		entrees *io;
+		int shmid;
 		
 		/*! 
 		* \enum declarations et initialisations 
@@ -30,19 +31,21 @@ class GenerateurSave
 			Etat3, /*!< Etat 3 */
 			Etat4, /*!< Etat 4 */
 			Etat5  /*!< Etat 5 */
-		} etat;
+		} Etat;
 		
 		Voyants voyants;
 		Prise prise;
 		Boutons boutons;
+		BaseClient baseClient;
 		
 		//GenerateurSave generateurSave;
 
 	public:
+		GenerateurSave();
 	    void initialiser();
 		void genererPWM(pwm tension);
 		int tension();
-		void MEF(etat init);
+		void MEF(Etat init);
 		void charger();
 		void ouvert();
 		void fermer();

@@ -3,6 +3,8 @@
 
 using namespace std;
 
+Boutons::Boutons(){}
+
 void Boutons::initialiser(){
 	bouton=acces_memoire(&shmid);
 	// associer..
@@ -14,6 +16,7 @@ void Boutons::initialiser(){
 
 	int Boutons::charge(){
 		int status;
+		initialiser();
 		status=bouton->bouton_charge;
 		bouton->bouton_charge=0;
 		return status;
@@ -21,6 +24,7 @@ void Boutons::initialiser(){
 	int Boutons::stop()
 	{
 		int status;
+		initialiser();
 		status=bouton->bouton_stop;
 		bouton->bouton_stop=0;
 		return status;

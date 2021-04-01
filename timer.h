@@ -39,6 +39,7 @@ class Timer
   	* \param void 
   	* \return void
   	*/
+  		void initialiser();
     	void raz();
     	/**
   	* \fn void valeur() 

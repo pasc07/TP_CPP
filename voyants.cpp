@@ -16,21 +16,25 @@ void Voyants::initialiser(){
 }
 
 void Voyants::set_charge(led ledCoul){
+	initialiser();
 	leds->led_charge=ledCoul; 	
 }
 
 void Voyants::set_dispo(led ledCoul){
+	initialiser();
 	leds->led_dispo=ledCoul;
 }
 void Voyants::blink_charge(){
     	int duree=8,n=0;
-		Timer timer = Timer();
-		timer.raz();
+		//Timer timer = Timer();
+		//timer.raz();
 	while(n <= duree)
 	{
 		usleep(250000);// 1/4 de secondes allumee
+			initialiser();
 			leds->led_charge=VERT;
 		usleep(250000); //1/4 de seconde eteint
+			initialiser();
 			leds->led_charge=OFF;
 		n++;
 	}
@@ -45,15 +49,17 @@ void Voyants::etat_dispo(){
 }
 
 void Voyants::blink_defaut(){
-	Timer timer = Timer();
-	timer.raz();
+	//Timer timer = Timer();
+	//timer.raz();
 	int duree=8,n=0;
 	
 	while(n <= duree)
 	{
 		usleep(250000);
+			initialiser();
 			leds->led_defaut=ROUGE;
 		usleep(250000);
+			initialiser();
 			leds->led_defaut=OFF;
 		n++;
 	}

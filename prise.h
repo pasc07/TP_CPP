@@ -10,22 +10,25 @@
 * \brief Cette classe gere les etats de la prise de la borne de
 * recharge.
 */
-
+#include <iostream>
 #include <donnees_borne.h>
 #include <memoire_borne.h>
-
+using namespace std;
 class Prise
 {
 
   private:
 		entrees *io;
+		int shmid;
   public :
+  	Prise();
   	/*!
   	* \fn void set_prise(led etat)
   	* \brief Donne l'etat de la prise, si elle est libre ou connectee. Utilise les pointeurs pour acceder aux variables systemes
   	* \param led etat: allumee pour signifier libre
   	* \return void: ne retourne pas de valeur
   	*/
+  	void initialiser();
     void set_prise(led etat);
     
     /*!

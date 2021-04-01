@@ -1,21 +1,70 @@
 #include "generateur_save.h"
 
+GenerateurSave::GenerateurSave(){
+}
+
+void GenerateurSave::initialiser(){
+	io=acces_memoire(&shmid);
+	// associer..
+	if(io==NULL) 
+	{
+		cout<<"Erreur pas de mem sh \n"<<endl;
+	}
+}
+
 void GenerateurSave::genererPWM(pwm tension)
 {
+	initialiser();
 	io->gene_pwm=tension;
 }
 
 int GenerateurSave::tension(){
+	initialiser();
 	return io-> gene_u;
 }
 
-void GenerateurSave::MEF(etat init)
+/*!
+* \fn
+* \brief
+* \param
+* \return
+*/
+void GenerateurSave::ouvert(){
+	initialiser();
+	io->contacteur_AC=0;
+}
+
+/*!
+* \fn
+* \brief
+* \param
+* \return
+*/
+void GenerateurSave::fermer(){
+	initialiser();
+	io->contacteur_AC=1;
+}
+
+/*!
+* \fn
+* \brief
+* \param
+* \return
+*/
+void GenerateurSave::charger(){
+	Etat etat =Etat1;
+	initialiser();
+	MEF(etat);
+}
+
+
+void GenerateurSave::MEF(Etat init)
 {
 
 	
 	/*! brief Implementation de la machine a etat fini correspondant au cycle charge*/
 
-	etat EP=init, ES=init;
+	Etat EP=init, ES=init;
 	/* Entrees: u pour recuperer la tension du fil pilote
 	et stop pour recuprer l'appui sur le bouton stop*/
 	int u,stop; 
@@ -54,8 +103,6 @@ void GenerateurSave::MEF(etat init)
 		
 		/* bloc G  et 	ecriture des sortie*/
 		if(EP==Etat1){
-			//voyants_set_dispo(OFF);
-			//voyants_set_charge(ROUGE);
 			cout<<EP<<endl;
 			prise.deverouiller_trappe();
 			genererPWM(DC);
@@ -89,18 +136,41 @@ void GenerateurSave::MEF(etat init)
 		usleep(1500000);
 		
 		} /* fin du while */
-		prise.set_prise(OFF);
+		//prise.set_prise(OFF);
 	
 }
-void GenerateurSave::charger(){
 
-}
-void GenerateurSave::ouvert(){
 
-}
-void GenerateurSave::fermer(){
-
-}
+/*!
+* \fn
+* \brief
+* \param
+* \return
+*/
 void GenerateurSave::deconnecter(){
+	int u;
+	usleep(50000);
+	/* Attente de reprise du vehicule*/
 
+	baseClient.reprise();
+	prise.deverouiller_trappe();
+	genererPWM(DC);
+	/* Pour gerer l'extinction du voyant prise a la deconnexion de la prise*/
+	u=tension();
+	
+	while(u!=12){
+		u=tension();
+		usleep(500000);
+	} 
+
+	if(u==12){
+		prise.set_prise(OFF);
+		}
+	usleep(50000);
+	voyants.set_dispo(VERT);
+	voyants.set_charge(OFF);
+	genererPWM(STOP);
+	usleep(50000);
+	prise.verouiller_trappe();
+	
 }
