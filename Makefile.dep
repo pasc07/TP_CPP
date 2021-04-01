@@ -5,4 +5,6 @@ timer.o: timer.cpp timer.h
 boutons.o: boutons.cpp boutons.h
 voyants.o: voyants.cpp voyants.h timer.h
 prise.o: prise.cpp prise.h
+generateur_save.o: generateur_save.cpp generateur_save.h prise.h \
+ boutons.h baseclient.h Client.h voyants.h timer.h
 borne.o: borne.cpp lecteurcarte.h voyants.h timer.h
