@@ -43,7 +43,7 @@ class Voyants
     	void blink_charge();
 
     	void set_defaut();
-    	void etat_dispo();
+    	int dispo();
   	
     	/**
     	* \fn void blink_defaut();

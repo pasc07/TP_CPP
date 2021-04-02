@@ -22,10 +22,10 @@ class Client{
 	
 	public:
 	/*
-	* \brief Constructeur de la classe Client
+	* \brief Constructeur de la classe Client pour init le nom et numero
 	*
 	*/
-		Client();
+		Client(string name, int num);
 		
 		string getNom();
 		

@@ -44,8 +44,12 @@ void Voyants::set_defaut(){
 
 }
 
-void Voyants::etat_dispo(){
-
+int Voyants::dispo(){
+	initialiser();
+	if((leds->led_dispo)==VERT) // retrourne l'etat du voyant dispo
+		return 1;
+	else
+		return 0;
 }
 
 void Voyants::blink_defaut(){

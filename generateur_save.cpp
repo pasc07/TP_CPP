@@ -62,7 +62,7 @@ void GenerateurSave::MEF(Etat init)
 {
 
 	
-	/*! brief Implementation de la machine a etat fini correspondant au cycle charge*/
+	/*! \brief Implementation de la machine a etat fini correspondant au cycle charge*/
 
 	Etat EP=init, ES=init;
 	/* Entrees: u pour recuperer la tension du fil pilote
@@ -151,7 +151,7 @@ void GenerateurSave::deconnecter(){
 	int u;
 	usleep(50000);
 	/* Attente de reprise du vehicule*/
-
+	BaseClient baseClient;
 	baseClient.reprise();
 	prise.deverouiller_trappe();
 	genererPWM(DC);

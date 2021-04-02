@@ -12,10 +12,9 @@
 
 using namespace std;
 class LecteurCarte
-{private:
-	int numero;
-	GenerateurSave generateurSave;
-	Voyants voyants;
+{
+private:
+	
 	Boutons boutons;
   public : 
 	void initialiser();

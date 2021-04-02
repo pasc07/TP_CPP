@@ -13,7 +13,8 @@
 using namespace std;
 int main()
 {
-
+	LecteurCarte lecteurcarte;
+ /*
     LecteurCarte lecteurcarte;
     GenerateurSave generateurSave;
     Timer timer;
@@ -26,6 +27,8 @@ int main()
     boutons.initialiser();
     prise.initialiser();
     timer.initialiser();
+    
+    */
     
 	cout<<" DEBUT PROCESSUS [9 pour le test]"<<endl;
     while (1)

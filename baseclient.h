@@ -13,22 +13,29 @@
 #include <iostream>
 #define DIM 20; /* ! ou utiliser des tableau dynamique*/
 #include <string>
-#include "Client.h"
+#include <vector>
+#include <fstream>
+#include <unistd.h>
+#include <lcarte.h>
+
+#include "voyants.h"
+#include "prise.h"
+#include "lecteurcarte.h"
+//#include "Client.h"
 
 using namespace std;
-
-
-
 class BaseClient
 {
   private:
 	int numero;
-	Client client;
-	//vector<Client> dbClient;
+	Prise prise;
+	Voyants voyants;
+	vector<int> dbClient;
+	string const database("database.txt");
+	
 	
   public : 
-  	BaseClient(){
-  	} //constructeur de la classse
+  	BaseClient();//constructeur de la classse
   	
   	/**
   	* \fn int authentifier();
@@ -39,7 +46,17 @@ class BaseClient
   	*/
 	int authentifier(int num_carte);
 	void reprise();
-	int recherche(int num) ;/* num represente le numero de carte du client*/
+	
+	/*!
+	* \brief verifie si le numero fourni existe dans la base
+	*
+	*/
+	int recherche(int num);
+	
+	int enregistrer(int numeroClient);
+	
+	void ajout();
+    void suupprimer_clients();
 };
 
 #endif // BASECLIENT

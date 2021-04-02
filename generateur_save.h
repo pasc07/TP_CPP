@@ -36,7 +36,7 @@ class GenerateurSave
 		Voyants voyants;
 		Prise prise;
 		Boutons boutons;
-		BaseClient baseClient;
+		
 		
 		//GenerateurSave generateurSave;
 
