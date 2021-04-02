@@ -2,7 +2,6 @@ lecteurcarte.o: lecteurcarte.cpp lecteurcarte.h voyants.h timer.h \
  baseclient.h prise.h boutons.h generateur_save.h
 baseclient.o: baseclient.cpp baseclient.h voyants.h timer.h prise.h \
  lecteurcarte.h boutons.h generateur_save.h
-Client.o: Client.cpp Client.h
 timer.o: timer.cpp timer.h
 boutons.o: boutons.cpp boutons.h
 voyants.o: voyants.cpp voyants.h timer.h

@@ -29,13 +29,29 @@ int main()
     timer.initialiser();
     
     */
+    BaseClient baseclient;
+    int choix;
+    cout<<"INTERFACE DE GESTION DE LA BORNE DE RECHARGE"<<endl;
+    cout<<"Entree votre choix"<<endl;
+    cout<<"1. Client"<<endl;
+    cout<<"2. Administrateur"<<endl;
+    cin>>choix;
+    cin.ignore();
     
-	cout<<" DEBUT PROCESSUS [9 pour le test]"<<endl;
-    while (1)
+    switch(choix)
     {
-        cout<<"Debut de while"<<endl;
-        lecteurcarte.lire_carte();
-		cout<<"Fin while"<<endl;
+    case 2 : cout<<"INTERFACE DE GESTION"<<endl;
+    		baseclient.ajout();
+			break;
+	case 1 :cout<<" DEBUT PROCESSUS [18 pour le test]"<<endl;
+    		while (1)
+    		{
+        		cout<<"Debut de while"<<endl;
+        		lecteurcarte.lire_carte();
+				cout<<"Fin while"<<endl;
+    		}
+			break;
+	default:
+		return 0;
     }
-
 }

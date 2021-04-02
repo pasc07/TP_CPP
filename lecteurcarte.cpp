@@ -15,7 +15,7 @@ void LecteurCarte::lire_carte()
 	Voyants voyants;
 	GenerateurSave generateurSave;
 	int numero, etat;
-	
+	baseclient.lire();
 	initialisations_ports();
 	attente_insertion_carte();
 	numero=lecture_numero_carte();
@@ -38,6 +38,8 @@ void LecteurCarte::lire_carte()
 			int status_bouton=boutons.charge();
 			if(status_bouton==1){
 				generateurSave.charger();
+				baseclient.reprise();
+				generateurSave.deconnecter();
 			}
 		}
 	}

@@ -21,6 +21,7 @@
 #include "voyants.h"
 #include "prise.h"
 #include "lecteurcarte.h"
+#include "generateur_save.h"
 //#include "Client.h"
 
 using namespace std;
@@ -31,7 +32,6 @@ class BaseClient
 	Prise prise;
 	Voyants voyants;
 	vector<int> dbClient;
-	string const database("database.txt");
 	
 	
   public : 
@@ -56,7 +56,8 @@ class BaseClient
 	int enregistrer(int numeroClient);
 	
 	void ajout();
-    void suupprimer_clients();
+	int lire();
+    void supprimer_clients();
 };
 
 #endif // BASECLIENT

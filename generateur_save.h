@@ -36,9 +36,6 @@ class GenerateurSave
 		Voyants voyants;
 		Prise prise;
 		Boutons boutons;
-		
-		
-		//GenerateurSave generateurSave;
 
 	public:
 		GenerateurSave();

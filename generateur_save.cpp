@@ -129,7 +129,7 @@ void GenerateurSave::MEF(Etat init)
 			ouvert();
 			voyants.set_charge(VERT);
 			genererPWM(DC);
-			deconnecter();
+			//deconnecter();
 			break; //Sortie de boucle de charge a la fin de Etat5
 		}
 		/* Temps d'attente pour que la tension du fil pilote change*/
@@ -151,9 +151,7 @@ void GenerateurSave::deconnecter(){
 	int u;
 	usleep(50000);
 	/* Attente de reprise du vehicule*/
-	BaseClient baseClient;
-	baseClient.reprise();
-	prise.deverouiller_trappe();
+	
 	genererPWM(DC);
 	/* Pour gerer l'extinction du voyant prise a la deconnexion de la prise*/
 	u=tension();
