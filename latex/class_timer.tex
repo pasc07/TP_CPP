@@ -4,16 +4,22 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_timer_ab241181d4c6d4c497ea14b75fb897685}{Timer}} ()
-\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser la timer. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_timer_ad62d4bbb0612a4f47581570c892fc393}\label{class_timer_ad62d4bbb0612a4f47581570c892fc393}} 
-void {\bfseries initialiser} ()
-\item 
+\begin{DoxyCompactList}\small\item\em represente le constructeur de la classe \mbox{\hyperlink{class_timer}{Timer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_ad62d4bbb0612a4f47581570c892fc393}{initialiser}} ()
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser les acces memoires. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_timer_a121b564c9c88f0189d1cd94a22d1f32f}{raz}} ()
-\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser le compteur de temps Communique a travers un pointeur. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser le compteur de temps. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_timer_a41df1c666f68a935a52a8c145c4d31de}{valeur}} ()
 \begin{DoxyCompactList}\small\item\em Renvoi la valeur actuel du compteur temps systeme. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_timer_a2f361d5c918101aa34aaedf542fb5b08}{pause}} (int s)
 \begin{DoxyCompactList}\small\item\em Permet de faire une pause de s secondes dans l\textquotesingle{}execution des taches par le systemes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 19 of file timer.\+h.
+
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -25,9 +31,9 @@ void \mbox{\hyperlink{class_timer_a2f361d5c918101aa34aaedf542fb5b08}{pause}} (in
 
 
 
-Permet d\textquotesingle{}initialiser la timer. 
+represente le constructeur de la classe \mbox{\hyperlink{class_timer}{Timer}}. 
 
-
+Permet d\textquotesingle{}initialiser le timer. 
 \begin{DoxyParams}{Parameters}
 {\em void} & \\
 \hline
@@ -37,7 +43,33 @@ void
 \end{DoxyReturn}
 
 
+Definition at line 5 of file timer.\+cpp.
+
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_timer_ad62d4bbb0612a4f47581570c892fc393}\label{class_timer_ad62d4bbb0612a4f47581570c892fc393}} 
+\index{Timer@{Timer}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void Timer\+::initialiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}initialiser les acces memoires. 
+
+Autorise l\textquotesingle{}acces a la memoire partagee. Appeler a chaque interaction avec la borne. Sinon affiche erreur d\textquotesingle{}acces 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 6 of file timer.\+cpp.
+
 \mbox{\Hypertarget{class_timer_a2f361d5c918101aa34aaedf542fb5b08}\label{class_timer_a2f361d5c918101aa34aaedf542fb5b08}} 
 \index{Timer@{Timer}!pause@{pause}}
 \index{pause@{pause}!Timer@{Timer}}
@@ -56,6 +88,17 @@ Permet de faire une pause de s secondes dans l\textquotesingle{}execution des ta
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
+
+
+Definition at line 15 of file timer.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_timer_a2f361d5c918101aa34aaedf542fb5b08_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_timer_a121b564c9c88f0189d1cd94a22d1f32f}\label{class_timer_a121b564c9c88f0189d1cd94a22d1f32f}} 
 \index{Timer@{Timer}!raz@{raz}}
 \index{raz@{raz}!Timer@{Timer}}
@@ -64,9 +107,9 @@ void
 
 
 
-Permet d\textquotesingle{}initialiser le compteur de temps Communique a travers un pointeur. 
+Permet d\textquotesingle{}initialiser le compteur de temps. 
 
-
+Communique a travers un pointeur 
 \begin{DoxyParams}{Parameters}
 {\em void} & \\
 \hline
@@ -74,6 +117,10 @@ Permet d\textquotesingle{}initialiser le compteur de temps Communique a travers 
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
+
+
+Definition at line 23 of file timer.\+cpp.
+
 \mbox{\Hypertarget{class_timer_a41df1c666f68a935a52a8c145c4d31de}\label{class_timer_a41df1c666f68a935a52a8c145c4d31de}} 
 \index{Timer@{Timer}!valeur@{valeur}}
 \index{valeur@{valeur}!Timer@{Timer}}
@@ -92,6 +139,17 @@ Renvoi la valeur actuel du compteur temps systeme.
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
+
+
+Definition at line 28 of file timer.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_timer_a41df1c666f68a935a52a8c145c4d31de_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="GenerateurSave::tension" name="GenerateurSave::tension">
+<area shape="rect" id="node1" title="Recupere la tension sur le fil pilote." alt="" coords="707,31,871,57"/>
+<area shape="rect" id="node2" href="$class_generateur_save.html#a0e4405ef904cab01fdc656c4afa56a9c" title="Remet la borne a l&#39;etat initial. Etat E : Quand le véhicule détecte que la batterie est chargée,..." alt="" coords="219,5,412,32"/>
+<area shape="rect" id="node3" href="$class_generateur_save.html#a66a76ba7c0ecb128bd481a277fdd2aae" title="genere une tension PWM (modulation d&#39;amplitude)" alt="" coords="460,31,659,57"/>
+<area shape="rect" id="node4" href="$class_generateur_save.html#ac78648b67d28e9c4c2970e99f37dc007" title="Machine a etat fini de la charge." alt="" coords="240,68,391,95"/>
+<area shape="rect" id="node5" href="$class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332" title="Demarre la machine a etat fini (MEF)" alt="" coords="5,68,171,95"/>
+</map>

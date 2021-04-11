@@ -1,0 +1,4 @@
+<map id="GenerateurSave::MEF" name="GenerateurSave::MEF">
+<area shape="rect" id="node1" title="Machine a etat fini de la charge." alt="" coords="219,5,369,32"/>
+<area shape="rect" id="node2" href="$class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332" title="Demarre la machine a etat fini (MEF)" alt="" coords="5,5,171,32"/>
+</map>

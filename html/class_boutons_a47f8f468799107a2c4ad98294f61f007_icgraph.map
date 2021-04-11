@@ -1,0 +1,5 @@
+<map id="Boutons::stop" name="Boutons::stop">
+<area shape="rect" id="node1" title="Signale l&#39;appui sur le bouton stop de la borne. L&#39;appui sur le bouton charge doit se faire avnat 8 se..." alt="" coords="417,5,520,32"/>
+<area shape="rect" id="node2" href="$class_generateur_save.html#ac78648b67d28e9c4c2970e99f37dc007" title="Machine a etat fini de la charge." alt="" coords="219,5,369,32"/>
+<area shape="rect" id="node3" href="$class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332" title="Demarre la machine a etat fini (MEF)" alt="" coords="5,5,171,32"/>
+</map>

@@ -3,14 +3,19 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_boutons_ae4a22b26e312cbe34efb63e02976c623}\label{class_boutons_ae4a22b26e312cbe34efb63e02976c623}} 
 void \mbox{\hyperlink{class_boutons_ae4a22b26e312cbe34efb63e02976c623}{initialiser}} ()
 \begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser les boutons. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_boutons_a6465c2eecbc7eaf980a73ea370aa9fef}{charge}} ()
-\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser les boutons. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_boutons_a47f8f468799107a2c4ad98294f61f007}\label{class_boutons_a47f8f468799107a2c4ad98294f61f007}} 
-int {\bfseries stop} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Signale l\textquotesingle{}appui sur le bouton charge. L\textquotesingle{}appui sur le bouton charge doit se faire avnat 8 secondes. pour pouvoir demarrer un cycle de charge. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_boutons_a47f8f468799107a2c4ad98294f61f007}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Signale l\textquotesingle{}appui sur le bouton stop de la borne. L\textquotesingle{}appui sur le bouton charge doit se faire avnat 8 secondes. pour pouvoir demarrer un cycle de charge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file boutons.\+h.
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -22,7 +27,7 @@ int {\bfseries stop} ()
 
 
 
-Permet d\textquotesingle{}initialiser les boutons. 
+Signale l\textquotesingle{}appui sur le bouton charge. L\textquotesingle{}appui sur le bouton charge doit se faire avnat 8 secondes. pour pouvoir demarrer un cycle de charge. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -32,6 +37,61 @@ Permet d\textquotesingle{}initialiser les boutons.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+
+Definition at line 17 of file boutons.\+cpp.
+
+\mbox{\Hypertarget{class_boutons_ae4a22b26e312cbe34efb63e02976c623}\label{class_boutons_ae4a22b26e312cbe34efb63e02976c623}} 
+\index{Boutons@{Boutons}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Boutons@{Boutons}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void Boutons\+::initialiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}initialiser les boutons. 
+
+Autorise l\textquotesingle{}acces a la memoire partagee. Appeler a chaque interaction avec la borne. Sinon affiche erreur d\textquotesingle{}acces 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file boutons.\+cpp.
+
+\mbox{\Hypertarget{class_boutons_a47f8f468799107a2c4ad98294f61f007}\label{class_boutons_a47f8f468799107a2c4ad98294f61f007}} 
+\index{Boutons@{Boutons}!stop@{stop}}
+\index{stop@{stop}!Boutons@{Boutons}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily int Boutons\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Signale l\textquotesingle{}appui sur le bouton stop de la borne. L\textquotesingle{}appui sur le bouton charge doit se faire avnat 8 secondes. pour pouvoir demarrer un cycle de charge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file boutons.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boutons_a47f8f468799107a2c4ad98294f61f007_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

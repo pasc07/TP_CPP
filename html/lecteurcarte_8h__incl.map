@@ -1,0 +1,18 @@
+<map id="lecteurcarte.h" name="lecteurcarte.h">
+<area shape="rect" id="node1" title="Cette classe permet d&#39;interagir avec la borne avec la carte client la borne de recharge." alt="" coords="530,5,631,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="326,304,392,331"/>
+<area shape="rect" id="node3" title=" " alt="" coords="582,304,654,331"/>
+<area shape="rect" id="node4" href="$voyants_8h.html" title="Gere les voyants de la borne." alt="" coords="618,155,695,181"/>
+<area shape="rect" id="node6" href="$timer_8h.html" title="Cette classe permet de creer des methodes pour la gestion du temps dans le systeme de recharge de veh..." alt="" coords="552,229,614,256"/>
+<area shape="rect" id="node9" href="$boutons_8h.html" title="Cette classe permet de gerer les appuis sur les boutons a travers l&#39;utilisation des pointeurs et des ..." alt="" coords="1010,229,1089,256"/>
+<area shape="rect" id="node11" href="$baseclient_8h.html" title="Permet d&#39;enregistrer les clients." alt="" coords="285,155,377,181"/>
+<area shape="rect" id="node15" href="$generateur__save_8h.html" title="Cette classe permet de gerer les appuis sur les boutons a travers l&#39;utilisation des pointeurs et des ..." alt="" coords="744,80,870,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="842,304,964,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="740,229,799,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="408,229,476,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="988,304,1111,331"/>
+<area shape="rect" id="node12" title=" " alt="" coords="197,229,252,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="276,229,332,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="56,229,121,256"/>
+<area shape="rect" id="node16" href="$prise_8h.html" title="Cette classe gere les etats de la prise de la borne de recharge." alt="" coords="874,229,935,256"/>
+</map>

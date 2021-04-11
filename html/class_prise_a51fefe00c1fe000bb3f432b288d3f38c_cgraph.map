@@ -1,0 +1,4 @@
+<map id="Prise::deverouiller_trappe" name="Prise::deverouiller_trappe">
+<area shape="rect" id="node1" title="Permet de voir l&#39;etat de la prise: deverouiller. Dans cette etat la voiture peut etre brancher...." alt="" coords="5,5,129,47"/>
+<area shape="rect" id="node2" href="$class_prise.html#a36e37c20ad397965feafa27fe8ceab8e" title="Permet d&#39;initialiser les acces memoire." alt="" coords="177,13,288,39"/>
+</map>

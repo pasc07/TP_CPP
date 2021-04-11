@@ -6,38 +6,142 @@
 \mbox{\Hypertarget{class_generateur_save_a53722690df6541c6c1479a61eba9e2d3}\label{class_generateur_save_a53722690df6541c6c1479a61eba9e2d3}} 
 void {\bfseries initialiser} ()
 \item 
-\mbox{\Hypertarget{class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae}\label{class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae}} 
-void {\bfseries generer\+PWM} (pwm tension)
-\item 
-\mbox{\Hypertarget{class_generateur_save_a8111c62210ca515dde68ea1c0c310117}\label{class_generateur_save_a8111c62210ca515dde68ea1c0c310117}} 
-int {\bfseries tension} ()
-\item 
+void \mbox{\hyperlink{class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae}{generer\+PWM}} (pwm \mbox{\hyperlink{class_generateur_save_aff44406efd9328c68dd6bd93590ad072}{tension}})
+\begin{DoxyCompactList}\small\item\em genere une tension PWM (modulation d\textquotesingle{}amplitude) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_generateur_save_aff44406efd9328c68dd6bd93590ad072}{tension}} ()
+\begin{DoxyCompactList}\small\item\em Recupere la tension sur le fil pilote. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_generateur_save_ac78648b67d28e9c4c2970e99f37dc007}{MEF}} (Etat init)
-\item 
+\begin{DoxyCompactList}\small\item\em Machine a etat fini de la charge. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_generateur_save_a0da4a9688fd39f8de1c52bdaea262332}\label{class_generateur_save_a0da4a9688fd39f8de1c52bdaea262332}} 
-void {\bfseries charger} ()
-\item 
+void \mbox{\hyperlink{class_generateur_save_a0da4a9688fd39f8de1c52bdaea262332}{charger}} ()
+\begin{DoxyCompactList}\small\item\em Demarre la machine a etat fini (MEF) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_generateur_save_a1a4e66faffc0886540c4f370872fc190}\label{class_generateur_save_a1a4e66faffc0886540c4f370872fc190}} 
-void {\bfseries ouvert} ()
-\item 
+void \mbox{\hyperlink{class_generateur_save_a1a4e66faffc0886540c4f370872fc190}{ouvert}} ()
+\begin{DoxyCompactList}\small\item\em Ouvre lle contacteur lorsque le vehicule est banche pour commancer un cycle de charge. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_generateur_save_ab0d2b9806f1132bcecff03a327d585f1}\label{class_generateur_save_ab0d2b9806f1132bcecff03a327d585f1}} 
-void {\bfseries fermer} ()
-\item 
+void \mbox{\hyperlink{class_generateur_save_ab0d2b9806f1132bcecff03a327d585f1}{fermer}} ()
+\begin{DoxyCompactList}\small\item\em Fermer le contacteur lorsque le vehicule est banche pour commancer un cycle de charge. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_generateur_save_a0e4405ef904cab01fdc656c4afa56a9c}\label{class_generateur_save_a0e4405ef904cab01fdc656c4afa56a9c}} 
-void {\bfseries deconnecter} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_generateur_save_a0e4405ef904cab01fdc656c4afa56a9c}{deconnecter}} ()
+\begin{DoxyCompactList}\small\item\em Remet la borne a l\textquotesingle{}etat initial. Etat E \+: Quand le véhicule détecte que la batterie est chargée, S2 est ouvert. Le signal remonte à 9V/-\/12V, indiquant à la borne d’ouvrir le contacteur AC. Le voyant « charge » s’allume en Vert. Etat F \+: retour à 12V quand la prise est déconnectée. Le voyant « charge » s’éteint.\+Lors de la reprise du véhicule, le client s’identifie à nouveau sur la borne. Si le véhicule est encore en charge, il appuie sur le bouton « Stop », sinon il peut le récupérer directement après l’avoir débranché. Le contacteur AC doit être ouvert, la prise déverrouillée. Une fois la prise débranchée par le client, la trappe doit être verrouillée, voyant « \mbox{\hyperlink{class_prise}{Prise}} » éteint et le voyant « disponible » allumé. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 22 of file generateur\+\_\+save.\+h.
+
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae}\label{class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae}} 
+\index{GenerateurSave@{GenerateurSave}!genererPWM@{genererPWM}}
+\index{genererPWM@{genererPWM}!GenerateurSave@{GenerateurSave}}
+\doxysubsubsection{\texorpdfstring{genererPWM()}{genererPWM()}}
+{\footnotesize\ttfamily void Generateur\+Save\+::generer\+PWM (\begin{DoxyParamCaption}\item[{pwm}]{tension }\end{DoxyParamCaption})}
+
+
+
+genere une tension PWM (modulation d\textquotesingle{}amplitude) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pwm} & tension \+: genere une tension pwm specifier en entree. La variable tension = (STOP,DC,AC\+\_\+1K,AC\+\_\+\+CL). Ces differentes tension sont uitliser pour communiquer avce le vehicule.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void A travers la variable memoire gene\+\_\+pwm elle genere la tension pwm selon les different commande existant. 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file generateur\+\_\+save.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_generateur_save_ac78648b67d28e9c4c2970e99f37dc007}\label{class_generateur_save_ac78648b67d28e9c4c2970e99f37dc007}} 
 \index{GenerateurSave@{GenerateurSave}!MEF@{MEF}}
 \index{MEF@{MEF}!GenerateurSave@{GenerateurSave}}
 \doxysubsubsection{\texorpdfstring{MEF()}{MEF()}}
 {\footnotesize\ttfamily void Generateur\+Save\+::\+MEF (\begin{DoxyParamCaption}\item[{Etat}]{init }\end{DoxyParamCaption})}
 
-Implementation de la machine a etat fini correspondant au cycle charge
+
+
+Machine a etat fini de la charge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Etat} & init \+: Etat initial systeme c\textquotesingle{}est a dire quand aucun vehicule n\textquotesingle{}est en charge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Cette valeur de tension est modifier par le simulateur. Donne l\textquotesingle{}etat courant du systeme. Un contrôleur de recharge, nommé générateur SAVE et situé côté infrastructure, vérifie les éléments suivants avant d’enclencher la recharge \+: érification que le véhicule est bien connecté au système (Etat B); Vérification que la masse du véhicule est bien reliée au circuit de protection de l’installation (Etat C); Vérification de la cohérence des puissances entre le câble, le véhicule et le circuit de recharge (Etat D); Détermination de la puissance maximale de recharge qui sera allouée au véhicule. L’ensemble de ces vérifications et de la communication se font au travers d’une communication sur fil spécifique, dit « fil PILOTE ». Voir la représentation d’une prise Type 3 sur la Figure 2 et la connectique entre la borne et le véhicule en Figure 3 (on notera la présence du connecteur S2 sur le véhicule). La figure 4 représente la valeur de la tension durant le processus. Ainsi, la charge se fait en fonction du dialogue suivant entre le véhicule et la borne (Figure 4)\+:
+
+Etat A \+: véhicule électrique non connecté, le générateur SAVE fournit une tension de + 12V. Le voyant « charge » s’allume en rouge. Etat B \+: véhicule électrique connecté et système d’alimentation non disponible, la tension chute à +9V. S2 est ouvert.
+
+Etat C \+: véhicule électrique connecté et système d’alimentation disponible, le générateur SAVE fournit un signal carré +9V / -\/12V de fréquence 1 k\+Hz qui aura pour effet de fermer le contacteur S2 sur le véhicule. Etat D \+: S2 est fermé et engendre une nouvelle chute de tension à 6V. Le générateur SAVE fournit un signal (+6V/-\/12V) de fréquence 1 k\+Hz à rapport cyclique variable. (signal PWM modulation en largeur d’impulsion). Ce rapport cyclique indique la puissance que la borne peut fournir au chargeur. La largeur d’impulsion varie linéairement entre 100 us (6A fourni par la borne) et 800 us (48A). La position fermée le S2 indique que le chargeur du véhicule électrique peut recevoir de l’énergie. La fermeture de S2 entraîne la fermeture d’un contacteur du circuit puissance sur la borne de recharge (AC). (il n’apparait pas sur le schéma) Etat E \+: Quand le véhicule détecte que la batterie est chargée, S2 est ouvert. Le signal remonte à 9V/-\/12V, indiquant à la borne d’ouvrir le contacteur AC. Le voyant « charge » s’allume en Vert. Etat F \+: retour à 12V quand la prise est déconnectée. Le voyant « charge » s’éteint.\+Lors de la reprise du véhicule, le client s’identifie à nouveau sur la borne. Si le véhicule est encore en charge, il appuie sur le bouton « Stop », sinon il peut le récupérer directement après l’avoir débranché. Le contacteur AC doit être ouvert, la prise déverrouillée. Une fois la prise débranchée par le client, la trappe doit être verrouillée, voyant « \mbox{\hyperlink{class_prise}{Prise}} » éteint et le voyant « disponible » allumé. Implementation de la machine a etat fini correspondant au cycle charge
+
+Definition at line 45 of file generateur\+\_\+save.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_generateur_save_aff44406efd9328c68dd6bd93590ad072}\label{class_generateur_save_aff44406efd9328c68dd6bd93590ad072}} 
+\index{GenerateurSave@{GenerateurSave}!tension@{tension}}
+\index{tension@{tension}!GenerateurSave@{GenerateurSave}}
+\doxysubsubsection{\texorpdfstring{tension()}{tension()}}
+{\footnotesize\ttfamily void int Generateur\+Save\+::tension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Recupere la tension sur le fil pilote. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \textbackslash{}\+Cette valeur de tension est modifier par le simulateur. Donne l\textquotesingle{}etat courant du systeme. 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file generateur\+\_\+save.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_generateur_save_aff44406efd9328c68dd6bd93590ad072_icgraph}
+\end{center}
+\end{figure}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-generateur\+\_\+save.\+h\item 
+\mbox{\hyperlink{generateur__save_8h}{generateur\+\_\+save.\+h}}\item 
 generateur\+\_\+save.\+cpp\end{DoxyCompactItemize}

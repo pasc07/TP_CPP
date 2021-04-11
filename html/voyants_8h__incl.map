@@ -1,0 +1,11 @@
+<map id="voyants.h" name="voyants.h">
+<area shape="rect" id="node1" title="Gere les voyants de la borne." alt="" coords="295,5,373,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,127,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="298,155,370,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="395,155,460,181"/>
+<area shape="rect" id="node5" href="$timer_8h.html" title="Cette classe permet de creer des methodes pour la gestion du temps dans le systeme de recharge de veh..." alt="" coords="233,80,296,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="422,80,481,107"/>
+<area shape="rect" id="node8" href="$boutons_8h.html" title="Cette classe permet de gerer les appuis sur les boutons a travers l&#39;utilisation des pointeurs et des ..." alt="" coords="131,80,209,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="505,80,573,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="151,155,274,181"/>
+</map>

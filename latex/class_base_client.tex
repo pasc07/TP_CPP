@@ -5,24 +5,28 @@
 \item 
 int \mbox{\hyperlink{class_base_client_a23c485ea9a98d86970571efd51384413}{authentifier}} (int num\+\_\+carte)
 \begin{DoxyCompactList}\small\item\em Methode qui permet d\textquotesingle{}authentifier un client. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_base_client_a45c5327810bce771843ef95b983025b3}\label{class_base_client_a45c5327810bce771843ef95b983025b3}} 
-void {\bfseries reprise} ()
-\item 
 \mbox{\Hypertarget{class_base_client_a4da3cf9a33345850d0f40e9ffd3dbd17}\label{class_base_client_a4da3cf9a33345850d0f40e9ffd3dbd17}} 
 int \mbox{\hyperlink{class_base_client_a4da3cf9a33345850d0f40e9ffd3dbd17}{recherche}} (int num)
 \begin{DoxyCompactList}\small\item\em verifie si le numero fourni existe dans la base \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_base_client_a45f054b7155757a0a9553bc04cc2c6ac}\label{class_base_client_a45f054b7155757a0a9553bc04cc2c6ac}} 
-int {\bfseries enregistrer} (int numero\+Client)
-\item 
+\mbox{\Hypertarget{class_base_client_a719a892ab60c14e1bbfbb1e7e7d03cb0}\label{class_base_client_a719a892ab60c14e1bbfbb1e7e7d03cb0}} 
+int \mbox{\hyperlink{class_base_client_a719a892ab60c14e1bbfbb1e7e7d03cb0}{enregistrer}} (int numero\+Client)
+\begin{DoxyCompactList}\small\item\em Enrgitrer un numero client Enregistre un client dans la base de donnees database.\+txt qui est une base de donnees locale sous forme de fichier texte. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_base_client_ab5cec94ac7d76cd74cb6e7a5f16bc627}\label{class_base_client_ab5cec94ac7d76cd74cb6e7a5f16bc627}} 
-void {\bfseries ajout} ()
-\item 
+void \mbox{\hyperlink{class_base_client_ab5cec94ac7d76cd74cb6e7a5f16bc627}{ajout}} ()
+\begin{DoxyCompactList}\small\item\em Interface permttant un enregisstrement de client Cette fonction utilise la fonction enregistrer pour permettre a un administrateur de la borne d\textquotesingle{}ajouter un client la base de donnees. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_base_client_a8892fd66992139f4e968f1bee333be1f}\label{class_base_client_a8892fd66992139f4e968f1bee333be1f}} 
-int {\bfseries lire} ()
-\item 
+int \mbox{\hyperlink{class_base_client_a8892fd66992139f4e968f1bee333be1f}{lire}} ()
+\begin{DoxyCompactList}\small\item\em Mets a jour la variable db\+Client\+: tableau dynamique avec vector Cette fonction est appeler au demarrage de la borne pour mettre a jour la variable db\+Client qui est un vector local. Ceci permet de recuperer tout les clients et ainsi reduire le temps d\textquotesingle{}authenfication d\textquotesingle{}un client. Elle est egalement appele apres l\textquotesingle{}\mbox{\hyperlink{class_base_client_ab5cec94ac7d76cd74cb6e7a5f16bc627}{ajout()}} d\textquotesingle{}un client dans la base. NB\+: Ceci n\textquotesingle{}est pas neccessaire dans notre car la DB n\textquotesingle{}est pas distant. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_base_client_aa4f988d32e037f2d1d9da0671ebbcf75}\label{class_base_client_aa4f988d32e037f2d1d9da0671ebbcf75}} 
-void {\bfseries supprimer\+\_\+clients} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_base_client_aa4f988d32e037f2d1d9da0671ebbcf75}{supprimer\+\_\+clients}} ()
+\begin{DoxyCompactList}\small\item\em Supprime un client dans la DB et met a jour le vecteur db\+Client avec \mbox{\hyperlink{class_base_client_a8892fd66992139f4e968f1bee333be1f}{lire()}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 21 of file baseclient.\+h.
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -42,8 +46,12 @@ Methode qui permet d\textquotesingle{}authentifier un client.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Booleen 
+Booleen
 \end{DoxyReturn}
+Pour permettre a l\textquotesingle{}utilisateur de recharger son vehicule il faut l\textquotesingle{}authentifier au prealable d\textquotesingle{}ou cette fonction qui verifie bien que l\textquotesingle{}utilisateur est enregistrer dans la bas de donnees. 
+
+Definition at line 7 of file baseclient.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

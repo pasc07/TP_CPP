@@ -1,0 +1,4 @@
+<map id="GenerateurSave::genererPWM" name="GenerateurSave::genererPWM">
+<area shape="rect" id="node1" title="genere une tension PWM (modulation d&#39;amplitude)" alt="" coords="5,5,204,32"/>
+<area shape="rect" id="node2" href="$class_generateur_save.html#aff44406efd9328c68dd6bd93590ad072" title="Recupere la tension sur le fil pilote." alt="" coords="252,5,416,32"/>
+</map>

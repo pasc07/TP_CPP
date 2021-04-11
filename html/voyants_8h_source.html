@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Conceptions Systemes en C++: voyants.h Source File</title>
+<title>Conceptions Systemes en C++: Borne de recharge de vehicule: voyants.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,10 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sme_1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Conceptions Systemes en C++
+   <div id="projectname">Conceptions Systemes en C++: Borne de recharge de vehicule
    </div>
-   <div id="projectbrief">Borne de recharge de vehicule electrique</div>
+   <div id="projectbrief">P. Sewoda and K. Achari</div>
   </td>
  </tr>
  </tbody>
@@ -74,37 +75,50 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;lcarte.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">timer.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;time.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;unistd.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="boutons_8h.html">boutons.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;unistd.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_voyants.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_voyants.html">Voyants</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        entrees *leds;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">int</span> shmid; <span class="comment">/*Share memory id */</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_voyants.html">Voyants</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#a550aa4551f1b55da3e677d6b56262c4d">initialiser</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#aed7b8fd98779dea9c359a9d995a0da6a">set_charge</a>(led ledCoul);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> set_dispo(led ledCoul);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> blink_charge();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> set_defaut();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> dispo();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#ac0960e6d7a17e877024cbc0ff5f42cb7">blink_defaut</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_voyants.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_voyants.html">Voyants</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        entrees *leds;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">int</span> shmid; <span class="comment">/*Share memory id */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">int</span> status_bouton;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="class_boutons.html">Boutons</a> boutons;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_voyants.html">Voyants</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#a550aa4551f1b55da3e677d6b56262c4d">initialiser</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#aed7b8fd98779dea9c359a9d995a0da6a">set_charge</a>(led ledCoul);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#a527ce5c953f6ae0525709bc8ded5a219">set_dispo</a>(led ledCoul);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_voyants_html"><div class="ttname"><a href="class_voyants.html">Voyants</a></div><div class="ttdef"><b>Definition:</b> voyants.h:20</div></div>
-<div class="ttc" id="aclass_voyants_html_a550aa4551f1b55da3e677d6b56262c4d"><div class="ttname"><a href="class_voyants.html#a550aa4551f1b55da3e677d6b56262c4d">Voyants::initialiser</a></div><div class="ttdeci">void initialiser()</div><div class="ttdoc">Permet de configurer l'acces a la memoire partagee a l'aide la variable shmid (share memory id) pour ...</div><div class="ttdef"><b>Definition:</b> voyants.cpp:9</div></div>
-<div class="ttc" id="aclass_voyants_html_ac0960e6d7a17e877024cbc0ff5f42cb7"><div class="ttname"><a href="class_voyants.html#ac0960e6d7a17e877024cbc0ff5f42cb7">Voyants::blink_defaut</a></div><div class="ttdeci">void blink_defaut()</div><div class="ttdoc">clignoter la LED defaut pendant 8 secondes</div><div class="ttdef"><b>Definition:</b> voyants.cpp:55</div></div>
-<div class="ttc" id="aclass_voyants_html_aed7b8fd98779dea9c359a9d995a0da6a"><div class="ttname"><a href="class_voyants.html#aed7b8fd98779dea9c359a9d995a0da6a">Voyants::set_charge</a></div><div class="ttdeci">void set_charge(led ledCoul)</div><div class="ttdoc">Allume le voyant charge quand le vehicule charge.</div><div class="ttdef"><b>Definition:</b> voyants.cpp:18</div></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#aa70caee71aa462737aa0cb5b03860a33">blink_charge</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#a90de83497234a87bc23428b341795571">set_defaut</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">int</span> dispo();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_voyants.html#ac0960e6d7a17e877024cbc0ff5f42cb7">blink_defaut</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">int</span> getStatus_bouton();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aboutons_8h_html"><div class="ttname"><a href="boutons_8h.html">boutons.h</a></div><div class="ttdoc">Cette classe permet de gerer les appuis sur les boutons a travers l'utilisation des pointeurs et des ...</div></div>
+<div class="ttc" id="aclass_boutons_html"><div class="ttname"><a href="class_boutons.html">Boutons</a></div><div class="ttdef"><b>Definition:</b> <a href="boutons_8h_source.html#l00012">boutons.h:12</a></div></div>
+<div class="ttc" id="aclass_voyants_html"><div class="ttname"><a href="class_voyants.html">Voyants</a></div><div class="ttdef"><b>Definition:</b> <a href="voyants_8h_source.html#l00020">voyants.h:21</a></div></div>
+<div class="ttc" id="aclass_voyants_html_a527ce5c953f6ae0525709bc8ded5a219"><div class="ttname"><a href="class_voyants.html#a527ce5c953f6ae0525709bc8ded5a219">Voyants::set_dispo</a></div><div class="ttdeci">void set_dispo(led ledCoul)</div><div class="ttdoc">Allume le voyant disponible a la fin de la charge.</div><div class="ttdef"><b>Definition:</b> <a href="voyants_8cpp_source.html#l00023">voyants.cpp:23</a></div></div>
+<div class="ttc" id="aclass_voyants_html_a550aa4551f1b55da3e677d6b56262c4d"><div class="ttname"><a href="class_voyants.html#a550aa4551f1b55da3e677d6b56262c4d">Voyants::initialiser</a></div><div class="ttdeci">void initialiser()</div><div class="ttdoc">Permet de configurer l'acces a la memoire partagee a l'aide la variable shmid (share memory id) pour ...</div><div class="ttdef"><b>Definition:</b> <a href="voyants_8cpp_source.html#l00009">voyants.cpp:9</a></div></div>
+<div class="ttc" id="aclass_voyants_html_a90de83497234a87bc23428b341795571"><div class="ttname"><a href="class_voyants.html#a90de83497234a87bc23428b341795571">Voyants::set_defaut</a></div><div class="ttdeci">void set_defaut()</div><div class="ttdoc">Allume la LED defaut de la borne.</div><div class="ttdef"><b>Definition:</b> <a href="voyants_8cpp_source.html#l00046">voyants.cpp:46</a></div></div>
+<div class="ttc" id="aclass_voyants_html_aa70caee71aa462737aa0cb5b03860a33"><div class="ttname"><a href="class_voyants.html#aa70caee71aa462737aa0cb5b03860a33">Voyants::blink_charge</a></div><div class="ttdeci">void blink_charge()</div><div class="ttdoc">Clignoter la led charge pendant 8 seconde.</div><div class="ttdef"><b>Definition:</b> <a href="voyants_8cpp_source.html#l00027">voyants.cpp:27</a></div></div>
+<div class="ttc" id="aclass_voyants_html_ac0960e6d7a17e877024cbc0ff5f42cb7"><div class="ttname"><a href="class_voyants.html#ac0960e6d7a17e877024cbc0ff5f42cb7">Voyants::blink_defaut</a></div><div class="ttdeci">void blink_defaut()</div><div class="ttdoc">clignoter la LED defaut pendant 8 secondes</div><div class="ttdef"><b>Definition:</b> <a href="voyants_8cpp_source.html#l00058">voyants.cpp:58</a></div></div>
+<div class="ttc" id="aclass_voyants_html_aed7b8fd98779dea9c359a9d995a0da6a"><div class="ttname"><a href="class_voyants.html#aed7b8fd98779dea9c359a9d995a0da6a">Voyants::set_charge</a></div><div class="ttdeci">void set_charge(led ledCoul)</div><div class="ttdoc">Allume le voyant charge quand le vehicule charge.</div><div class="ttdef"><b>Definition:</b> <a href="voyants_8cpp_source.html#l00018">voyants.cpp:18</a></div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div><div class="ttdoc">Cette classe permet de creer des methodes pour la gestion du temps dans le systeme de recharge de veh...</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

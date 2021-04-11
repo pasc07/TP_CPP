@@ -1,0 +1,11 @@
+<map id="boutons.h" name="boutons.h">
+<area shape="rect" id="node1" title="Cette classe permet de gerer les appuis sur les boutons a travers l&#39;utilisation des pointeurs et des ..." alt="" coords="134,5,213,32"/>
+<area shape="rect" id="node2" href="$boutons_8cpp_source.html" title=" " alt="" coords="17,80,111,107"/>
+<area shape="rect" id="node3" href="$generateur__save_8h.html" title="Cette classe permet de gerer les appuis sur les boutons a travers l&#39;utilisation des pointeurs et des ..." alt="" coords="34,155,161,181"/>
+<area shape="rect" id="node5" href="$lecteurcarte_8h.html" title="Cette classe permet d&#39;interagir avec la borne avec la carte client la borne de recharge." alt="" coords="171,229,272,256"/>
+<area shape="rect" id="node8" href="$voyants_8h.html" title="Gere les voyants de la borne." alt="" coords="236,80,313,107"/>
+<area shape="rect" id="node4" href="$generateur__save_8cpp_source.html" title=" " alt="" coords="5,229,147,256"/>
+<area shape="rect" id="node6" href="$borne_8cpp.html" title="Fonction principale de la borne Cette fonction principale fait appel a la fonction lecteur carte qui ..." alt="" coords="121,304,199,331"/>
+<area shape="rect" id="node7" href="$lecteurcarte_8cpp_source.html" title=" " alt="" coords="224,304,339,331"/>
+<area shape="rect" id="node9" href="$voyants_8cpp_source.html" title=" " alt="" coords="287,155,377,181"/>
+</map>

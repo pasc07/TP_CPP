@@ -1,0 +1,5 @@
+<map id="Prise::deverouiller_trappe" name="Prise::deverouiller_trappe">
+<area shape="rect" id="node1" title="Permet de voir l&#39;etat de la prise: deverouiller. Dans cette etat la voiture peut etre brancher...." alt="" coords="417,5,541,47"/>
+<area shape="rect" id="node2" href="$class_generateur_save.html#ac78648b67d28e9c4c2970e99f37dc007" title="Machine a etat fini de la charge." alt="" coords="219,13,369,39"/>
+<area shape="rect" id="node3" href="$class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332" title="Demarre la machine a etat fini (MEF)" alt="" coords="5,13,171,39"/>
+</map>

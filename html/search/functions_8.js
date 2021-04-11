@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['set_5fcharge_50',['set_charge',['../class_voyants.html#aed7b8fd98779dea9c359a9d995a0da6a',1,'Voyants']]],
-  ['set_5fprise_51',['set_prise',['../class_prise.html#a159631e26ace3a7aeced8b54576a467a',1,'Prise']]]
+  ['lire_71',['lire',['../class_base_client.html#a8892fd66992139f4e968f1bee333be1f',1,'BaseClient']]],
+  ['lire_5fcarte_72',['lire_carte',['../class_lecteur_carte.html#a90e4f75fb492935ebaf5f908173763af',1,'LecteurCarte']]]
 ];

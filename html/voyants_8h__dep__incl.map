@@ -1,0 +1,9 @@
+<map id="voyants.h" name="voyants.h">
+<area shape="rect" id="node1" title="Gere les voyants de la borne." alt="" coords="183,5,260,32"/>
+<area shape="rect" id="node2" href="$generateur__save_8h.html" title="Cette classe permet de gerer les appuis sur les boutons a travers l&#39;utilisation des pointeurs et des ..." alt="" coords="57,80,183,107"/>
+<area shape="rect" id="node4" href="$lecteurcarte_8h.html" title="Cette classe permet d&#39;interagir avec la borne avec la carte client la borne de recharge." alt="" coords="171,155,272,181"/>
+<area shape="rect" id="node7" href="$voyants_8cpp_source.html" title=" " alt="" coords="259,80,349,107"/>
+<area shape="rect" id="node3" href="$generateur__save_8cpp_source.html" title=" " alt="" coords="5,155,147,181"/>
+<area shape="rect" id="node5" href="$borne_8cpp.html" title="Fonction principale de la borne Cette fonction principale fait appel a la fonction lecteur carte qui ..." alt="" coords="122,229,201,256"/>
+<area shape="rect" id="node6" href="$lecteurcarte_8cpp_source.html" title=" " alt="" coords="225,229,340,256"/>
+</map>

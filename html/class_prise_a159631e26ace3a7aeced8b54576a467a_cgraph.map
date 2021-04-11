@@ -1,0 +1,4 @@
+<map id="Prise::set_prise" name="Prise::set_prise">
+<area shape="rect" id="node1" title="Donne l&#39;etat de la prise, si elle est libre ou connectee. Utilise les pointeurs pour acceder aux vari..." alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node2" href="$class_prise.html#a36e37c20ad397965feafa27fe8ceab8e" title="Permet d&#39;initialiser les acces memoire." alt="" coords="167,5,277,32"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Conceptions Systemes en C++: GenerateurSave Class Reference</title>
+<title>Conceptions Systemes en C++: Borne de recharge de vehicule: GenerateurSave Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,10 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sme_1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Conceptions Systemes en C++
+   <div id="projectname">Conceptions Systemes en C++: Borne de recharge de vehicule
    </div>
-   <div id="projectbrief">Borne de recharge de vehicule electrique</div>
+   <div id="projectbrief">P. Sewoda and K. Achari</div>
   </td>
  </tr>
  </tbody>
@@ -75,28 +76,85 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a53722690df6541c6c1479a61eba9e2d3"><td class="memItemLeft" align="right" valign="top"><a id="a53722690df6541c6c1479a61eba9e2d3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initialiser</b> ()</td></tr>
 <tr class="separator:a53722690df6541c6c1479a61eba9e2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66a76ba7c0ecb128bd481a277fdd2aae"><td class="memItemLeft" align="right" valign="top"><a id="a66a76ba7c0ecb128bd481a277fdd2aae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>genererPWM</b> (pwm tension)</td></tr>
+<tr class="memitem:a66a76ba7c0ecb128bd481a277fdd2aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generateur_save.html#a66a76ba7c0ecb128bd481a277fdd2aae">genererPWM</a> (pwm <a class="el" href="class_generateur_save.html#aff44406efd9328c68dd6bd93590ad072">tension</a>)</td></tr>
+<tr class="memdesc:a66a76ba7c0ecb128bd481a277fdd2aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">genere une tension PWM (modulation d'amplitude)  <a href="class_generateur_save.html#a66a76ba7c0ecb128bd481a277fdd2aae">More...</a><br /></td></tr>
 <tr class="separator:a66a76ba7c0ecb128bd481a277fdd2aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8111c62210ca515dde68ea1c0c310117"><td class="memItemLeft" align="right" valign="top"><a id="a8111c62210ca515dde68ea1c0c310117"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>tension</b> ()</td></tr>
-<tr class="separator:a8111c62210ca515dde68ea1c0c310117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff44406efd9328c68dd6bd93590ad072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generateur_save.html#aff44406efd9328c68dd6bd93590ad072">tension</a> ()</td></tr>
+<tr class="memdesc:aff44406efd9328c68dd6bd93590ad072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere la tension sur le fil pilote.  <a href="class_generateur_save.html#aff44406efd9328c68dd6bd93590ad072">More...</a><br /></td></tr>
+<tr class="separator:aff44406efd9328c68dd6bd93590ad072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac78648b67d28e9c4c2970e99f37dc007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generateur_save.html#ac78648b67d28e9c4c2970e99f37dc007">MEF</a> (Etat init)</td></tr>
+<tr class="memdesc:ac78648b67d28e9c4c2970e99f37dc007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Machine a etat fini de la charge.  <a href="class_generateur_save.html#ac78648b67d28e9c4c2970e99f37dc007">More...</a><br /></td></tr>
 <tr class="separator:ac78648b67d28e9c4c2970e99f37dc007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0da4a9688fd39f8de1c52bdaea262332"><td class="memItemLeft" align="right" valign="top"><a id="a0da4a9688fd39f8de1c52bdaea262332"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>charger</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332">charger</a> ()</td></tr>
+<tr class="memdesc:a0da4a9688fd39f8de1c52bdaea262332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demarre la machine a etat fini (MEF) <br /></td></tr>
 <tr class="separator:a0da4a9688fd39f8de1c52bdaea262332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a4e66faffc0886540c4f370872fc190"><td class="memItemLeft" align="right" valign="top"><a id="a1a4e66faffc0886540c4f370872fc190"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ouvert</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generateur_save.html#a1a4e66faffc0886540c4f370872fc190">ouvert</a> ()</td></tr>
+<tr class="memdesc:a1a4e66faffc0886540c4f370872fc190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouvre lle contacteur lorsque le vehicule est banche pour commancer un cycle de charge. <br /></td></tr>
 <tr class="separator:a1a4e66faffc0886540c4f370872fc190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0d2b9806f1132bcecff03a327d585f1"><td class="memItemLeft" align="right" valign="top"><a id="ab0d2b9806f1132bcecff03a327d585f1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fermer</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generateur_save.html#ab0d2b9806f1132bcecff03a327d585f1">fermer</a> ()</td></tr>
+<tr class="memdesc:ab0d2b9806f1132bcecff03a327d585f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fermer le contacteur lorsque le vehicule est banche pour commancer un cycle de charge. <br /></td></tr>
 <tr class="separator:ab0d2b9806f1132bcecff03a327d585f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e4405ef904cab01fdc656c4afa56a9c"><td class="memItemLeft" align="right" valign="top"><a id="a0e4405ef904cab01fdc656c4afa56a9c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deconnecter</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generateur_save.html#a0e4405ef904cab01fdc656c4afa56a9c">deconnecter</a> ()</td></tr>
+<tr class="memdesc:a0e4405ef904cab01fdc656c4afa56a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remet la borne a l'etat initial. Etat E : Quand le véhicule détecte que la batterie est chargée, S2 est ouvert. Le signal remonte à 9V/-12V, indiquant à la borne d’ouvrir le contacteur AC. Le voyant « charge » s’allume en Vert. Etat F : retour à 12V quand la prise est déconnectée. Le voyant « charge » s’éteint.Lors de la reprise du véhicule, le client s’identifie à nouveau sur la borne. Si le véhicule est encore en charge, il appuie sur le bouton « Stop », sinon il peut le récupérer directement après l’avoir débranché. Le contacteur AC doit être ouvert, la prise déverrouillée. Une fois la prise débranchée par le client, la trappe doit être verrouillée, voyant « <a class="el" href="class_prise.html">Prise</a> » éteint et le voyant « disponible » allumé. <br /></td></tr>
 <tr class="separator:a0e4405ef904cab01fdc656c4afa56a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="generateur__save_8h_source.html#l00022">22</a> of file <a class="el" href="generateur__save_8h_source.html">generateur_save.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a66a76ba7c0ecb128bd481a277fdd2aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a76ba7c0ecb128bd481a277fdd2aae">&#9670;&nbsp;</a></span>genererPWM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GenerateurSave::genererPWM </td>
+          <td>(</td>
+          <td class="paramtype">pwm&#160;</td>
+          <td class="paramname"><em>tension</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>genere une tension PWM (modulation d'amplitude) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pwm</td><td>tension : genere une tension pwm specifier en entree. La variable tension = (STOP,DC,AC_1K,AC_CL). Ces differentes tension sont uitliser pour communiquer avce le vehicule.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void A travers la variable memoire gene_pwm elle genere la tension pwm selon les different commande existant. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="generateur__save_8cpp_source.html#l00015">15</a> of file <a class="el" href="generateur__save_8cpp_source.html">generateur_save.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_cgraph.png" border="0" usemap="#aclass_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_cgraph" alt=""/></div>
+<map name="aclass_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_cgraph" id="aclass_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_cgraph">
+<area shape="rect" title="genere une tension PWM (modulation d&#39;amplitude)" alt="" coords="5,5,204,32"/>
+<area shape="rect" href="class_generateur_save.html#aff44406efd9328c68dd6bd93590ad072" title="Recupere la tension sur le fil pilote." alt="" coords="252,5,416,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_icgraph.png" border="0" usemap="#aclass_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_icgraph" alt=""/></div>
+<map name="aclass_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_icgraph" id="aclass_generateur_save_a66a76ba7c0ecb128bd481a277fdd2aae_icgraph">
+<area shape="rect" title="genere une tension PWM (modulation d&#39;amplitude)" alt="" coords="460,31,659,57"/>
+<area shape="rect" href="class_generateur_save.html#a0e4405ef904cab01fdc656c4afa56a9c" title="Remet la borne a l&#39;etat initial. Etat E : Quand le véhicule détecte que la batterie est chargée,..." alt="" coords="219,5,412,32"/>
+<area shape="rect" href="class_generateur_save.html#ac78648b67d28e9c4c2970e99f37dc007" title="Machine a etat fini de la charge." alt="" coords="240,56,391,83"/>
+<area shape="rect" href="class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332" title="Demarre la machine a etat fini (MEF)" alt="" coords="5,56,171,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ac78648b67d28e9c4c2970e99f37dc007"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac78648b67d28e9c4c2970e99f37dc007">&#9670;&nbsp;</a></span>MEF()</h2>
 
@@ -112,13 +170,95 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>deconnecter</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Machine a etat fini de la charge. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Etat</td><td>init : Etat initial systeme c'est a dire quand aucun vehicule n'est en charge. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<p>Cette valeur de tension est modifier par le simulateur. Donne l'etat courant du systeme. Un contrôleur de recharge, nommé générateur SAVE et situé côté infrastructure, vérifie les éléments suivants avant d’enclencher la recharge : érification que le véhicule est bien connecté au système (Etat B); Vérification que la masse du véhicule est bien reliée au circuit de protection de l’installation (Etat C); Vérification de la cohérence des puissances entre le câble, le véhicule et le circuit de recharge (Etat D); Détermination de la puissance maximale de recharge qui sera allouée au véhicule. L’ensemble de ces vérifications et de la communication se font au travers d’une communication sur fil spécifique, dit « fil PILOTE ». Voir la représentation d’une prise Type 3 sur la Figure 2 et la connectique entre la borne et le véhicule en Figure 3 (on notera la présence du connecteur S2 sur le véhicule). La figure 4 représente la valeur de la tension durant le processus. Ainsi, la charge se fait en fonction du dialogue suivant entre le véhicule et la borne (Figure 4):</p>
+<p>Etat A : véhicule électrique non connecté, le générateur SAVE fournit une tension de + 12V. Le voyant « charge » s’allume en rouge. Etat B : véhicule électrique connecté et système d’alimentation non disponible, la tension chute à +9V. S2 est ouvert.</p>
+<p>Etat C : véhicule électrique connecté et système d’alimentation disponible, le générateur SAVE fournit un signal carré +9V / -12V de fréquence 1 kHz qui aura pour effet de fermer le contacteur S2 sur le véhicule. Etat D : S2 est fermé et engendre une nouvelle chute de tension à 6V. Le générateur SAVE fournit un signal (+6V/-12V) de fréquence 1 kHz à rapport cyclique variable. (signal PWM modulation en largeur d’impulsion). Ce rapport cyclique indique la puissance que la borne peut fournir au chargeur. La largeur d’impulsion varie linéairement entre 100 us (6A fourni par la borne) et 800 us (48A). La position fermée le S2 indique que le chargeur du véhicule électrique peut recevoir de l’énergie. La fermeture de S2 entraîne la fermeture d’un contacteur du circuit puissance sur la borne de recharge (AC). (il n’apparait pas sur le schéma) Etat E : Quand le véhicule détecte que la batterie est chargée, S2 est ouvert. Le signal remonte à 9V/-12V, indiquant à la borne d’ouvrir le contacteur AC. Le voyant « charge » s’allume en Vert. Etat F : retour à 12V quand la prise est déconnectée. Le voyant « charge » s’éteint.Lors de la reprise du véhicule, le client s’identifie à nouveau sur la borne. Si le véhicule est encore en charge, il appuie sur le bouton « Stop », sinon il peut le récupérer directement après l’avoir débranché. Le contacteur AC doit être ouvert, la prise déverrouillée. Une fois la prise débranchée par le client, la trappe doit être verrouillée, voyant « <a class="el" href="class_prise.html">Prise</a> » éteint et le voyant « disponible » allumé. </p>
 <p>Implementation de la machine a etat fini correspondant au cycle charge</p>
+
+<p class="definition">Definition at line <a class="el" href="generateur__save_8cpp_source.html#l00045">45</a> of file <a class="el" href="generateur__save_8cpp_source.html">generateur_save.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_cgraph.png" border="0" usemap="#aclass_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_cgraph" alt=""/></div>
+<map name="aclass_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_cgraph" id="aclass_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_cgraph">
+<area shape="rect" title="Machine a etat fini de la charge." alt="" coords="5,233,156,260"/>
+<area shape="rect" href="class_prise.html#a51fefe00c1fe000bb3f432b288d3f38c" title="Permet de voir l&#39;etat de la prise: deverouiller. Dans cette etat la voiture peut etre brancher...." alt="" coords="241,462,365,503"/>
+<area shape="rect" href="class_generateur_save.html#ab0d2b9806f1132bcecff03a327d585f1" title="Fermer le contacteur lorsque le vehicule est banche pour commancer un cycle de charge." alt="" coords="224,56,383,83"/>
+<area shape="rect" href="class_generateur_save.html#a66a76ba7c0ecb128bd481a277fdd2aae" title="genere une tension PWM (modulation d&#39;amplitude)" alt="" coords="204,5,403,32"/>
+<area shape="rect" href="class_generateur_save.html#aff44406efd9328c68dd6bd93590ad072" title="Recupere la tension sur le fil pilote." alt="" coords="451,56,615,83"/>
+<area shape="rect" href="class_generateur_save.html#a1a4e66faffc0886540c4f370872fc190" title="Ouvre lle contacteur lorsque le vehicule est banche pour commancer un cycle de charge." alt="" coords="225,208,381,235"/>
+<area shape="rect" href="class_voyants.html#aed7b8fd98779dea9c359a9d995a0da6a" title="Allume le voyant charge quand le vehicule charge." alt="" coords="232,259,375,285"/>
+<area shape="rect" href="class_voyants.html#a527ce5c953f6ae0525709bc8ded5a219" title="Allume le voyant disponible a la fin de la charge." alt="" coords="236,309,371,336"/>
+<area shape="rect" href="class_prise.html#a159631e26ace3a7aeced8b54576a467a" title="Donne l&#39;etat de la prise, si elle est libre ou connectee. Utilise les pointeurs pour acceder aux vari..." alt="" coords="247,157,360,184"/>
+<area shape="rect" href="class_boutons.html#a47f8f468799107a2c4ad98294f61f007" title="Signale l&#39;appui sur le bouton stop de la borne. L&#39;appui sur le bouton charge doit se faire avnat 8 se..." alt="" coords="252,411,355,437"/>
+<area shape="rect" href="class_prise.html#a3c23e0e69c65fae933baece16637212f" title="Permet de voir l&#39;etat de la prise: verouiller. Dans cette etat la voiture ne peut pas etre brancher...." alt="" coords="227,360,380,387"/>
+<area shape="rect" href="class_prise.html#a36e37c20ad397965feafa27fe8ceab8e" title="Permet d&#39;initialiser les acces memoire." alt="" coords="477,360,588,387"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_icgraph.png" border="0" usemap="#aclass_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_icgraph" alt=""/></div>
+<map name="aclass_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_icgraph" id="aclass_generateur_save_ac78648b67d28e9c4c2970e99f37dc007_icgraph">
+<area shape="rect" title="Machine a etat fini de la charge." alt="" coords="219,5,369,32"/>
+<area shape="rect" href="class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332" title="Demarre la machine a etat fini (MEF)" alt="" coords="5,5,171,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aff44406efd9328c68dd6bd93590ad072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff44406efd9328c68dd6bd93590ad072">&#9670;&nbsp;</a></span>tension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void int GenerateurSave::tension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupere la tension sur le fil pilote. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int \Cette valeur de tension est modifier par le simulateur. Donne l'etat courant du systeme. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="generateur__save_8cpp_source.html#l00021">21</a> of file <a class="el" href="generateur__save_8cpp_source.html">generateur_save.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_generateur_save_aff44406efd9328c68dd6bd93590ad072_icgraph.png" border="0" usemap="#aclass_generateur_save_aff44406efd9328c68dd6bd93590ad072_icgraph" alt=""/></div>
+<map name="aclass_generateur_save_aff44406efd9328c68dd6bd93590ad072_icgraph" id="aclass_generateur_save_aff44406efd9328c68dd6bd93590ad072_icgraph">
+<area shape="rect" title="Recupere la tension sur le fil pilote." alt="" coords="707,31,871,57"/>
+<area shape="rect" href="class_generateur_save.html#a0e4405ef904cab01fdc656c4afa56a9c" title="Remet la borne a l&#39;etat initial. Etat E : Quand le véhicule détecte que la batterie est chargée,..." alt="" coords="219,5,412,32"/>
+<area shape="rect" href="class_generateur_save.html#a66a76ba7c0ecb128bd481a277fdd2aae" title="genere une tension PWM (modulation d&#39;amplitude)" alt="" coords="460,31,659,57"/>
+<area shape="rect" href="class_generateur_save.html#ac78648b67d28e9c4c2970e99f37dc007" title="Machine a etat fini de la charge." alt="" coords="240,68,391,95"/>
+<area shape="rect" href="class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332" title="Demarre la machine a etat fini (MEF)" alt="" coords="5,68,171,95"/>
+</map>
+</div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="generateur__save_8h_source.html">generateur_save.h</a></li>
-<li>generateur_save.cpp</li>
+<li><a class="el" href="generateur__save_8cpp_source.html">generateur_save.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

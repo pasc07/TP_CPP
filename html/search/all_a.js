@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['set_5fcharge_19',['set_charge',['../class_voyants.html#aed7b8fd98779dea9c359a9d995a0da6a',1,'Voyants']]],
-  ['set_5fprise_20',['set_prise',['../class_prise.html#a159631e26ace3a7aeced8b54576a467a',1,'Prise']]]
+  ['ouvert_24',['ouvert',['../class_generateur_save.html#a1a4e66faffc0886540c4f370872fc190',1,'GenerateurSave']]]
 ];

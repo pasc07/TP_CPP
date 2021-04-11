@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['generateursave_9',['GenerateurSave',['../class_generateur_save.html',1,'']]],
-  ['gestionclients_10',['Gestionclients',['../class_gestionclients.html',1,'']]]
+  ['enregistrer_13',['enregistrer',['../class_base_client.html#a719a892ab60c14e1bbfbb1e7e7d03cb0',1,'BaseClient']]]
 ];

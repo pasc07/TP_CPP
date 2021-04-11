@@ -1,0 +1,4 @@
+<map id="Timer::pause" name="Timer::pause">
+<area shape="rect" id="node1" title="Permet de faire une pause de s secondes dans l&#39;execution des taches par le systemes." alt="" coords="5,5,103,32"/>
+<area shape="rect" id="node2" href="$class_timer.html#a41df1c666f68a935a52a8c145c4d31de" title="Renvoi la valeur actuel du compteur temps systeme." alt="" coords="151,5,245,32"/>
+</map>

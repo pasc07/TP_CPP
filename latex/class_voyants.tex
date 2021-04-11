@@ -7,24 +7,53 @@ void \mbox{\hyperlink{class_voyants_a550aa4551f1b55da3e677d6b56262c4d}{initialis
 \begin{DoxyCompactList}\small\item\em Permet de configurer l\textquotesingle{}acces a la memoire partagee a l\textquotesingle{}aide la variable shmid (share memory id) pour permettre de communiquer avec la carte. Un message d\textquotesingle{}erreur s\textquotesingle{}affiche en cas de probleme d\textquotesingle{}acces. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_voyants_aed7b8fd98779dea9c359a9d995a0da6a}{set\+\_\+charge}} (led led\+Coul)
 \begin{DoxyCompactList}\small\item\em Allume le voyant charge quand le vehicule charge. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_voyants_a527ce5c953f6ae0525709bc8ded5a219}\label{class_voyants_a527ce5c953f6ae0525709bc8ded5a219}} 
-void {\bfseries set\+\_\+dispo} (led led\+Coul)
-\item 
-\mbox{\Hypertarget{class_voyants_aa70caee71aa462737aa0cb5b03860a33}\label{class_voyants_aa70caee71aa462737aa0cb5b03860a33}} 
-void {\bfseries blink\+\_\+charge} ()
-\item 
-\mbox{\Hypertarget{class_voyants_a90de83497234a87bc23428b341795571}\label{class_voyants_a90de83497234a87bc23428b341795571}} 
-void {\bfseries set\+\_\+defaut} ()
-\item 
+void \mbox{\hyperlink{class_voyants_a527ce5c953f6ae0525709bc8ded5a219}{set\+\_\+dispo}} (led led\+Coul)
+\begin{DoxyCompactList}\small\item\em Allume le voyant disponible a la fin de la charge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_voyants_aa70caee71aa462737aa0cb5b03860a33}{blink\+\_\+charge}} ()
+\begin{DoxyCompactList}\small\item\em Clignoter la led charge pendant 8 seconde. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_voyants_a90de83497234a87bc23428b341795571}{set\+\_\+defaut}} ()
+\begin{DoxyCompactList}\small\item\em Allume la LED defaut de la borne. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_voyants_a5e926e0ed8ec69a09fd1661725c13610}\label{class_voyants_a5e926e0ed8ec69a09fd1661725c13610}} 
 int {\bfseries dispo} ()
 \item 
 \mbox{\Hypertarget{class_voyants_ac0960e6d7a17e877024cbc0ff5f42cb7}\label{class_voyants_ac0960e6d7a17e877024cbc0ff5f42cb7}} 
 void \mbox{\hyperlink{class_voyants_ac0960e6d7a17e877024cbc0ff5f42cb7}{blink\+\_\+defaut}} ()
-\begin{DoxyCompactList}\small\item\em clignoter la LED defaut pendant 8 secondes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em clignoter la LED defaut pendant 8 secondes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_voyants_af771649902eee52dec01eaacf610e5a7}\label{class_voyants_af771649902eee52dec01eaacf610e5a7}} 
+int {\bfseries get\+Status\+\_\+bouton} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 20 of file voyants.\+h.
+
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_voyants_aa70caee71aa462737aa0cb5b03860a33}\label{class_voyants_aa70caee71aa462737aa0cb5b03860a33}} 
+\index{Voyants@{Voyants}!blink\_charge@{blink\_charge}}
+\index{blink\_charge@{blink\_charge}!Voyants@{Voyants}}
+\doxysubsubsection{\texorpdfstring{blink\_charge()}{blink\_charge()}}
+{\footnotesize\ttfamily void Voyants\+::blink\+\_\+charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clignoter la led charge pendant 8 seconde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & led\+Coul\+: qui represente la couleur a afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file voyants.\+cpp.
+
 \mbox{\Hypertarget{class_voyants_a550aa4551f1b55da3e677d6b56262c4d}\label{class_voyants_a550aa4551f1b55da3e677d6b56262c4d}} 
 \index{Voyants@{Voyants}!initialiser@{initialiser}}
 \index{initialiser@{initialiser}!Voyants@{Voyants}}
@@ -43,6 +72,10 @@ Permet de configurer l\textquotesingle{}acces a la memoire partagee a l\textquot
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
+
+
+Definition at line 9 of file voyants.\+cpp.
+
 \mbox{\Hypertarget{class_voyants_aed7b8fd98779dea9c359a9d995a0da6a}\label{class_voyants_aed7b8fd98779dea9c359a9d995a0da6a}} 
 \index{Voyants@{Voyants}!set\_charge@{set\_charge}}
 \index{set\_charge@{set\_charge}!Voyants@{Voyants}}
@@ -61,6 +94,68 @@ Allume le voyant charge quand le vehicule charge.
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
+
+
+Definition at line 18 of file voyants.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_voyants_aed7b8fd98779dea9c359a9d995a0da6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_voyants_a90de83497234a87bc23428b341795571}\label{class_voyants_a90de83497234a87bc23428b341795571}} 
+\index{Voyants@{Voyants}!set\_defaut@{set\_defaut}}
+\index{set\_defaut@{set\_defaut}!Voyants@{Voyants}}
+\doxysubsubsection{\texorpdfstring{set\_defaut()}{set\_defaut()}}
+{\footnotesize\ttfamily void Voyants\+::set\+\_\+defaut (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allume la LED defaut de la borne. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & led\+Coul\+: qui represente la couleur a afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file voyants.\+cpp.
+
+\mbox{\Hypertarget{class_voyants_a527ce5c953f6ae0525709bc8ded5a219}\label{class_voyants_a527ce5c953f6ae0525709bc8ded5a219}} 
+\index{Voyants@{Voyants}!set\_dispo@{set\_dispo}}
+\index{set\_dispo@{set\_dispo}!Voyants@{Voyants}}
+\doxysubsubsection{\texorpdfstring{set\_dispo()}{set\_dispo()}}
+{\footnotesize\ttfamily void Voyants\+::set\+\_\+dispo (\begin{DoxyParamCaption}\item[{led}]{led\+Coul }\end{DoxyParamCaption})}
+
+
+
+Allume le voyant disponible a la fin de la charge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & led\+Coul\+: qui represente la couleur a afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file voyants.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_voyants_a527ce5c953f6ae0525709bc8ded5a219_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

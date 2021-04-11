@@ -1,17 +1,58 @@
 \hypertarget{class_lecteur_carte}{}\doxysection{Lecteur\+Carte Class Reference}
 \label{class_lecteur_carte}\index{LecteurCarte@{LecteurCarte}}
+
+
+{\ttfamily \#include $<$lecteurcarte.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_lecteur_carte_a723859d389df0d286a553d39ec77a11f}\label{class_lecteur_carte_a723859d389df0d286a553d39ec77a11f}} 
 void {\bfseries initialiser} ()
 \item 
+void \mbox{\hyperlink{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}{lire\+\_\+carte}} ()
+\begin{DoxyCompactList}\small\item\em Lecteur de carte. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lecteur_carte_a3c31e6eeb400beeaab47ae6b5ef8c142}\label{class_lecteur_carte_a3c31e6eeb400beeaab47ae6b5ef8c142}} 
+void \mbox{\hyperlink{class_lecteur_carte_a3c31e6eeb400beeaab47ae6b5ef8c142}{reprise}} ()
+\begin{DoxyCompactList}\small\item\em Permet deverrouiller la trappe pour que l\textquotesingle{}utilisateur reprenne son vehicule. Pour etre sur que le vehicule appartient a ce dernier, on verifie egalement que la carte inserer correspond a la derniere carte inserer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+SEWODA \& ACHARI 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+01 April 2021 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+Definition at line 23 of file lecteurcarte.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}\label{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}} 
-void {\bfseries lire\+\_\+carte} ()
-\end{DoxyCompactItemize}
+\index{LecteurCarte@{LecteurCarte}!lire\_carte@{lire\_carte}}
+\index{lire\_carte@{lire\_carte}!LecteurCarte@{LecteurCarte}}
+\doxysubsubsection{\texorpdfstring{lire\_carte()}{lire\_carte()}}
+{\footnotesize\ttfamily void Lecteur\+Carte\+::lire\+\_\+carte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lecteur de carte. 
+
+Cette fonction represente le point d\textquotesingle{}entree de rechargement d\textquotesingle{}un vehicule. Elle fait appel a d\textquotesingle{}autre fonction pour \+:
+
+authentifier() charger() \mbox{\hyperlink{class_lecteur_carte_a3c31e6eeb400beeaab47ae6b5ef8c142}{reprise()}} deconnecter() 
+
+Definition at line 11 of file lecteurcarte.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-lecteurcarte.\+h\item 
+\mbox{\hyperlink{lecteurcarte_8h}{lecteurcarte.\+h}}\item 
 lecteurcarte.\+cpp\end{DoxyCompactItemize}

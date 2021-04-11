@@ -7,9 +7,8 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_prise_a36e37c20ad397965feafa27fe8ceab8e}\label{class_prise_a36e37c20ad397965feafa27fe8ceab8e}} 
-void {\bfseries initialiser} ()
-\item 
+void \mbox{\hyperlink{class_prise_a36e37c20ad397965feafa27fe8ceab8e}{initialiser}} ()
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser les acces memoire. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_prise_a159631e26ace3a7aeced8b54576a467a}{set\+\_\+prise}} (led etat)
 \begin{DoxyCompactList}\small\item\em Donne l\textquotesingle{}etat de la prise, si elle est libre ou connectee. Utilise les pointeurs pour acceder aux variables systemes. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_prise_a3c23e0e69c65fae933baece16637212f}{verouiller\+\_\+trappe}} ()
@@ -26,8 +25,12 @@ SEWODA \& ACHARI
 01 April 2021 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-1.\+0 
+1.\+3 
 \end{DoxyVersion}
+
+
+Definition at line 17 of file prise.\+h.
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -49,6 +52,53 @@ Permet de voir l\textquotesingle{}etat de la prise\+: deverouiller. Dans cette e
 \begin{DoxyReturn}{Returns}
 void\+: ne retourne pas de valeur 
 \end{DoxyReturn}
+
+
+Definition at line 19 of file prise.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_prise_a51fefe00c1fe000bb3f432b288d3f38c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prise_a51fefe00c1fe000bb3f432b288d3f38c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_prise_a36e37c20ad397965feafa27fe8ceab8e}\label{class_prise_a36e37c20ad397965feafa27fe8ceab8e}} 
+\index{Prise@{Prise}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Prise@{Prise}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void Prise\+::initialiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}initialiser les acces memoire. 
+
+Autorise l\textquotesingle{}acces a la memoire partagee. Appeler a chaque interaction avec la borne. Sinon affiche erreur d\textquotesingle{}acces 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 4 of file prise.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prise_a36e37c20ad397965feafa27fe8ceab8e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_prise_a159631e26ace3a7aeced8b54576a467a}\label{class_prise_a159631e26ace3a7aeced8b54576a467a}} 
 \index{Prise@{Prise}!set\_prise@{set\_prise}}
 \index{set\_prise@{set\_prise}!Prise@{Prise}}
@@ -67,6 +117,24 @@ Donne l\textquotesingle{}etat de la prise, si elle est libre ou connectee. Utili
 \begin{DoxyReturn}{Returns}
 void\+: ne retourne pas de valeur 
 \end{DoxyReturn}
+
+
+Definition at line 25 of file prise.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{class_prise_a159631e26ace3a7aeced8b54576a467a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prise_a159631e26ace3a7aeced8b54576a467a_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_prise_a3c23e0e69c65fae933baece16637212f}\label{class_prise_a3c23e0e69c65fae933baece16637212f}} 
 \index{Prise@{Prise}!verouiller\_trappe@{verouiller\_trappe}}
 \index{verouiller\_trappe@{verouiller\_trappe}!Prise@{Prise}}
@@ -85,6 +153,24 @@ Permet de voir l\textquotesingle{}etat de la prise\+: verouiller. Dans cette eta
 \begin{DoxyReturn}{Returns}
 void\+: ne retourne pas de valeur 
 \end{DoxyReturn}
+
+
+Definition at line 13 of file prise.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_prise_a3c23e0e69c65fae933baece16637212f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prise_a3c23e0e69c65fae933baece16637212f_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

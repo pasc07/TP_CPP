@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialiser_45',['initialiser',['../class_boutons.html#ae4a22b26e312cbe34efb63e02976c623',1,'Boutons::initialiser()'],['../class_voyants.html#a550aa4551f1b55da3e677d6b56262c4d',1,'Voyants::initialiser()']]]
+  ['enregistrer_67',['enregistrer',['../class_base_client.html#a719a892ab60c14e1bbfbb1e7e7d03cb0',1,'BaseClient']]]
 ];

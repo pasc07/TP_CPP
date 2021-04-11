@@ -1,0 +1,9 @@
+<map id="Prise::initialiser" name="Prise::initialiser">
+<area shape="rect" id="node1" title="Permet d&#39;initialiser les acces memoire." alt="" coords="661,71,772,98"/>
+<area shape="rect" id="node2" href="$class_prise.html#a51fefe00c1fe000bb3f432b288d3f38c" title="Permet de voir l&#39;etat de la prise: deverouiller. Dans cette etat la voiture peut etre brancher...." alt="" coords="475,5,599,47"/>
+<area shape="rect" id="node5" href="$class_prise.html#a159631e26ace3a7aeced8b54576a467a" title="Donne l&#39;etat de la prise, si elle est libre ou connectee. Utilise les pointeurs pour acceder aux vari..." alt="" coords="480,122,593,149"/>
+<area shape="rect" id="node7" href="$class_prise.html#a3c23e0e69c65fae933baece16637212f" title="Permet de voir l&#39;etat de la prise: verouiller. Dans cette etat la voiture ne peut pas etre brancher...." alt="" coords="460,71,613,98"/>
+<area shape="rect" id="node3" href="$class_generateur_save.html#ac78648b67d28e9c4c2970e99f37dc007" title="Machine a etat fini de la charge." alt="" coords="240,71,391,98"/>
+<area shape="rect" id="node4" href="$class_generateur_save.html#a0da4a9688fd39f8de1c52bdaea262332" title="Demarre la machine a etat fini (MEF)" alt="" coords="5,71,171,98"/>
+<area shape="rect" id="node6" href="$class_generateur_save.html#a0e4405ef904cab01fdc656c4afa56a9c" title="Remet la borne a l&#39;etat initial. Etat E : Quand le véhicule détecte que la batterie est chargée,..." alt="" coords="219,122,412,149"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="GenerateurSave::MEF" name="GenerateurSave::MEF">
+<area shape="rect" id="node1" title="Machine a etat fini de la charge." alt="" coords="5,233,156,260"/>
+<area shape="rect" id="node2" href="$class_prise.html#a51fefe00c1fe000bb3f432b288d3f38c" title="Permet de voir l&#39;etat de la prise: deverouiller. Dans cette etat la voiture peut etre brancher...." alt="" coords="241,462,365,503"/>
+<area shape="rect" id="node4" href="$class_generateur_save.html#ab0d2b9806f1132bcecff03a327d585f1" title="Fermer le contacteur lorsque le vehicule est banche pour commancer un cycle de charge." alt="" coords="224,56,383,83"/>
+<area shape="rect" id="node5" href="$class_generateur_save.html#a66a76ba7c0ecb128bd481a277fdd2aae" title="genere une tension PWM (modulation d&#39;amplitude)" alt="" coords="204,5,403,32"/>
+<area shape="rect" id="node6" href="$class_generateur_save.html#aff44406efd9328c68dd6bd93590ad072" title="Recupere la tension sur le fil pilote." alt="" coords="451,56,615,83"/>
+<area shape="rect" id="node7" href="$class_generateur_save.html#a1a4e66faffc0886540c4f370872fc190" title="Ouvre lle contacteur lorsque le vehicule est banche pour commancer un cycle de charge." alt="" coords="225,208,381,235"/>
+<area shape="rect" id="node8" href="$class_voyants.html#aed7b8fd98779dea9c359a9d995a0da6a" title="Allume le voyant charge quand le vehicule charge." alt="" coords="232,259,375,285"/>
+<area shape="rect" id="node9" href="$class_voyants.html#a527ce5c953f6ae0525709bc8ded5a219" title="Allume le voyant disponible a la fin de la charge." alt="" coords="236,309,371,336"/>
+<area shape="rect" id="node10" href="$class_prise.html#a159631e26ace3a7aeced8b54576a467a" title="Donne l&#39;etat de la prise, si elle est libre ou connectee. Utilise les pointeurs pour acceder aux vari..." alt="" coords="247,157,360,184"/>
+<area shape="rect" id="node11" href="$class_boutons.html#a47f8f468799107a2c4ad98294f61f007" title="Signale l&#39;appui sur le bouton stop de la borne. L&#39;appui sur le bouton charge doit se faire avnat 8 se..." alt="" coords="252,411,355,437"/>
+<area shape="rect" id="node12" href="$class_prise.html#a3c23e0e69c65fae933baece16637212f" title="Permet de voir l&#39;etat de la prise: verouiller. Dans cette etat la voiture ne peut pas etre brancher...." alt="" coords="227,360,380,387"/>
+<area shape="rect" id="node3" href="$class_prise.html#a36e37c20ad397965feafa27fe8ceab8e" title="Permet d&#39;initialiser les acces memoire." alt="" coords="477,360,588,387"/>
+</map>

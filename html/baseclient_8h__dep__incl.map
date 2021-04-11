@@ -1,0 +1,9 @@
+<map id="baseclient.h" name="baseclient.h">
+<area shape="rect" id="node1" title="Permet d&#39;enregistrer les clients." alt="" coords="157,5,249,32"/>
+<area shape="rect" id="node2" href="$baseclient_8cpp_source.html" title=" " alt="" coords="5,80,112,107"/>
+<area shape="rect" id="node3" href="$borne_8cpp.html" title="Fonction principale de la borne Cette fonction principale fait appel a la fonction lecteur carte qui ..." alt="" coords="177,229,255,256"/>
+<area shape="rect" id="node4" href="$generateur__save_8h.html" title="Cette classe permet de gerer les appuis sur les boutons a travers l&#39;utilisation des pointeurs et des ..." alt="" coords="194,80,321,107"/>
+<area shape="rect" id="node6" href="$lecteurcarte_8h.html" title="Cette classe permet d&#39;interagir avec la borne avec la carte client la borne de recharge." alt="" coords="352,155,453,181"/>
+<area shape="rect" id="node5" href="$generateur__save_8cpp_source.html" title=" " alt="" coords="187,155,328,181"/>
+<area shape="rect" id="node7" href="$lecteurcarte_8cpp_source.html" title=" " alt="" coords="345,229,460,256"/>
+</map>

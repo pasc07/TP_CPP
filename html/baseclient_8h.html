@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Conceptions Systemes en C++: baseclient.h File Reference</title>
+<title>Conceptions Systemes en C++: Borne de recharge de vehicule: baseclient.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,10 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sme_1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Conceptions Systemes en C++
+   <div id="projectname">Conceptions Systemes en C++: Borne de recharge de vehicule
    </div>
-   <div id="projectbrief">Borne de recharge de vehicule electrique</div>
+   <div id="projectbrief">P. Sewoda and K. Achari</div>
   </td>
  </tr>
  </tbody>
@@ -63,8 +64,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">baseclient.h File Reference</div>  </div>
 </div><!--header-->
@@ -78,10 +78,34 @@ $(function() {
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="voyants_8h_source.html">voyants.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="prise_8h_source.html">prise.h</a>&quot;</code><br />
-<code>#include &quot;lecteurcarte.h&quot;</code><br />
-<code>#include &quot;generateur_save.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for baseclient.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="baseclient_8h__incl.png" border="0" usemap="#abaseclient_8h" alt=""/></div>
+<map name="abaseclient_8h" id="abaseclient_8h">
+<area shape="rect" title="Permet d&#39;enregistrer les clients." alt="" coords="213,5,305,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,71,107"/>
+<area shape="rect" title=" " alt="" coords="95,80,167,107"/>
+<area shape="rect" title=" " alt="" coords="192,80,247,107"/>
+<area shape="rect" title=" " alt="" coords="271,80,327,107"/>
+<area shape="rect" title=" " alt="" coords="352,80,417,107"/>
+<area shape="rect" title=" " alt="" coords="441,80,509,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="baseclient_8h__dep__incl.png" border="0" usemap="#abaseclient_8hdep" alt=""/></div>
+<map name="abaseclient_8hdep" id="abaseclient_8hdep">
+<area shape="rect" title="Permet d&#39;enregistrer les clients." alt="" coords="157,5,249,32"/>
+<area shape="rect" href="baseclient_8cpp_source.html" title=" " alt="" coords="5,80,112,107"/>
+<area shape="rect" href="borne_8cpp.html" title="Fonction principale de la borne Cette fonction principale fait appel a la fonction lecteur carte qui ..." alt="" coords="177,229,255,256"/>
+<area shape="rect" href="generateur__save_8h.html" title="Cette classe permet de gerer les appuis sur les boutons a travers l&#39;utilisation des pointeurs et des ..." alt="" coords="194,80,321,107"/>
+<area shape="rect" href="lecteurcarte_8h.html" title="Cette classe permet d&#39;interagir avec la borne avec la carte client la borne de recharge." alt="" coords="352,155,453,181"/>
+<area shape="rect" href="generateur__save_8cpp_source.html" title=" " alt="" coords="187,155,328,181"/>
+<area shape="rect" href="lecteurcarte_8cpp_source.html" title=" " alt="" coords="345,229,460,256"/>
+</map>
+</div>
 </div>
 <p><a href="baseclient_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -89,17 +113,13 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_client.html">BaseClient</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ac25189db92959bff3c6c2adf4c34b50a"><td class="memItemLeft" align="right" valign="top"><a id="ac25189db92959bff3c6c2adf4c34b50a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIM</b>&#160;&#160;&#160;20; /* ! ou utiliser des tableau dynamique*/</td></tr>
-<tr class="separator:ac25189db92959bff3c6c2adf4c34b50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Permet d'enregistrer les clients. </p>
 <dl class="section author"><dt>Author</dt><dd>Sewoda et Achari </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="baseclient_8h_source.html">baseclient.h</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
