@@ -11,20 +11,14 @@ void LecteurCarte::initialiser()
 void LecteurCarte::lire_carte()
 {
 	int reussi=1;
-	BaseClient baseclient;
-	Voyants voyants;
-	GenerateurSave generateurSave;
-	int numero, etat;
 	baseclient.lire();
 	initialisations_ports();
 	attente_insertion_carte();
-	numero=lecture_numero_carte();
-	etat=voyants.dispo();
-	//cout<<"Etat= "<<etat<<endl;
-	if(etat==1){
+	numero_courant=lecture_numero_carte();
+	if(voyants.dispo()==1){
 		
-		reussi=baseclient.authentifier(numero);
-		cout<<"Hello carte inserer et numero recuperer "<<numero<<endl;
+		reussi=baseclient.authentifier(numero_courant);
+		cout<<"Numero de carte: "<<numero_courant<<endl;
 	
 	
 		if(reussi==0)
@@ -38,7 +32,7 @@ void LecteurCarte::lire_carte()
 			int status_bouton=boutons.charge();
 			if(status_bouton==1){
 				generateurSave.charger();
-				baseclient.reprise();
+				reprise();
 				generateurSave.deconnecter();
 			}
 		}
@@ -46,5 +40,32 @@ void LecteurCarte::lire_carte()
 	usleep(1000000);
 	attente_retrait_carte();
 	liberation_ports();
+}
+
+
+void LecteurCarte::reprise(){
+	cout<<"REPRISE "<<endl;
+	int reussi, numero;
+	while(1){
+		initialisations_ports();
+		attente_insertion_carte();
+		//if (carte_inseree() ) 
+		
+		numero=lecture_numero_carte();
+		//cout<<"Numero lu: "<<numero<<endl;
+	
+		reussi=baseclient.authentifier(numero);
+		
+		if((reussi==0)||(numero!=numero_courant))
+		{
+			voyants.blink_defaut();
+		}
+		else
+		{
+			cout<<"Authentification reussi!"<<endl;
+			prise.deverouiller_trappe();
+			break;
+		}
+	}
 }
 

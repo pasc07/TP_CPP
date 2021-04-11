@@ -12,32 +12,6 @@ int BaseClient::authentifier(int num_carte){
 			return 0;
 }
 
-void BaseClient::reprise(){
-	cout<<"REPRISE "<<endl;
-	int reussi, numero;
-	while(1){
-	initialisations_ports();
-	attente_insertion_carte();
-	//if (carte_inseree() ) 
-	
-	numero=lecture_numero_carte();
-	cout<<"Numero lu: "<<numero<<endl;
-
-	reussi=authentifier(numero);
-
-	if(reussi==0)
-	{
-		voyants.blink_defaut();
-	}
-	else
-	{
-		cout<<"Authentification reussi!"<<endl;
-		prise.deverouiller_trappe();
-	}
-	if(reussi==1)
-		break;
-	}
-}
 
 int BaseClient::recherche(int num){
 	int i=0, exist =0;
@@ -99,7 +73,10 @@ void BaseClient::ajout(){
 	initialisations_ports();
 	attente_insertion_carte();
 	numero=lecture_numero_carte();
-	//Enrigistre le numero dans le fichier
+	/*
+	Enrigistre le numero dans le fichier
+	Sinon affiche une erreur
+	*/
 	if(enregistrer(numero))
 		cout<<"Nouveau client enregistre avec succes"<<endl;
 	else
@@ -107,5 +84,7 @@ void BaseClient::ajout(){
 	
 }
 void BaseClient::supprimer_clients(){
-	
+	/*
+	Cette fonction permettra de supprimer un client dans la base de donnees
+	*/
 }
