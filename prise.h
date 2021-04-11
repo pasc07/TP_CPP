@@ -22,13 +22,25 @@ class Prise
 		int shmid;
   public :
   	Prise();
-  	/*!
+  	
+  	/**
+ 	* \fn void initialiser()
+ 	* \brief Permet d'initialiser les acces memoire
+ 	*
+ 	* Autorise l'acces a la memoire partagee. Appeler a chaque 
+ 	* interaction avec la borne. Sinon affiche erreur d'acces
+ 	* \param void
+ 	* \return void
+ 	*/ 
+  	void initialiser();
+  	
+  	 	
+ 	/*!
   	* \fn void set_prise(led etat)
   	* \brief Donne l'etat de la prise, si elle est libre ou connectee. Utilise les pointeurs pour acceder aux variables systemes
   	* \param led etat: allumee pour signifier libre
   	* \return void: ne retourne pas de valeur
   	*/
-  	void initialiser();
     void set_prise(led etat);
     
     /*!
@@ -45,8 +57,6 @@ class Prise
   	* \return void: ne retourne pas de valeur
   	*/
     void deverouiller_trappe();
-    
-     //void initialiser();
 };
 
 #endif
