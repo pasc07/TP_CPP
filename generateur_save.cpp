@@ -23,12 +23,7 @@ int GenerateurSave::tension(){
 	return io-> gene_u;
 }
 
-/*!
-* \fn
-* \brief
-* \param
-* \return
-*/
+
 void GenerateurSave::ouvert(){
 	initialiser();
 	io->contacteur_AC=0;
@@ -136,7 +131,6 @@ void GenerateurSave::MEF(Etat init)
 		usleep(1500000);
 		
 		} /* fin du while */
-		//prise.set_prise(OFF);
 	
 }
 

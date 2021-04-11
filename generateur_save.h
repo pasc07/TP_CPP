@@ -39,8 +39,26 @@ class GenerateurSave
 
 	public:
 		GenerateurSave();
+		
+		
 	    void initialiser();
+	    
+	    /*!
+		* \fn void genererPWM(pwm tension)
+		* \brief Recupere la tension sur le fil pilote
+		* \param pwm tension : genere une tension pwm specifier en entree. La variable tension = (STOP,DC,AC_1K,AC_CL). Ces differentes tension sont uitliser pour communiquer avce le vehicule.
+		
+		* \return void
+		* A travers la variable memoire gene_pwm elle genere la tension pwm selon les different commande existant.
+		*/
 		void genererPWM(pwm tension);
+		
+		/*!
+		* \fn void int tension()
+		* \brief Recupere la tension sur le fil pilote
+		* \param
+		* \return
+		*/
 		int tension();
 		void MEF(Etat init);
 		void charger();

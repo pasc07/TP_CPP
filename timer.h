@@ -26,20 +26,34 @@ class Timer
 	
 	public:
 	/**
-  	* \fn void Timer () : represente le constructeur de la classe Timer
-  	* \brief Permet d'initialiser la timer
+  	* \fn void Timer () 
+  	* \brief represente le constructeur de la classe Timer.
+  	* 
+  	* Permet d'initialiser le timer.
   	* \param void 
   	* \return void
   	*/
 		Timer();
-		/**
+		
+		 		/**
+ 		* \fn void initialiser();
+ 		* \brief Permet d'initialiser les acces memoires
+ 		*
+ 		* Autorise l'acces a la memoire partagee. Appeler a chaque 
+ 		* interaction avec la borne. Sinon affiche erreur d'acces
+ 		* \param void
+ 		* \return void
+ 		*/ 	
+		void initialiser();
+		
+	/**
   	* \fn void raz() 
-  	* \brief Permet d'initialiser le compteur de temps
-  	Communique a travers un pointeur
+  	* \brief Permet d'initialiser le compteur de temps.
+  	*
+  	* Communique a travers un pointeur
   	* \param void 
   	* \return void
   	*/
-  		void initialiser();
     	void raz();
     	/**
   	* \fn void valeur() 

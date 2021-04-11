@@ -23,7 +23,6 @@ void Timer::pause(int s){
 void Timer::raz(){
 	initialiser();
 	depart_timer=io->timer_sec;
-	cout<<"Fin pause"<<endl;
 }
 
 int Timer::valeur(){
