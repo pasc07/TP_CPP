@@ -7,6 +7,7 @@
 * \author Sewoda et Achari
 * \version 1.0
 * \date 11/04/2021
+*
 * Cette fonction principale fait appel a la fonction lecteur carte qui 
 * demarre un cycle de rechargement.
 
