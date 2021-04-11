@@ -4,18 +4,15 @@
 /*!
 * \file borne.cpp
 * \brief Fonction principale de la borne
+* Cette fonction principale fait appel a la fonction lecteur carte qui 
+* demarre un cycle de rechargement.
+* Le circuit de recharge dédié et imposé dans le « Mode 3 » est défini dans la proposition de norme IEC 61851-1 « ELECTRIC VEHICLE CONDUCTIVE CHARGING SYSTEM ». Cela permet de garantir une sécurité maximale des utilisateurs lors de la recharge de leur véhicule électrique. La Figure 3 représente la connectique entre une borne et un véhicule.
+*
+*Code admin =1234 
 * \author Sewoda et Achari
 * \version 1.0
 * \date 11/04/2021
-* Cette fonction principale fait appel a la fonction lecteur carte qui 
-* demarre un cycle de rechargement.
-
-Le circuit de recharge dédié et imposé dans le « Mode 3 » est défini dans la proposition de norme IEC 
-61851-1 « ELECTRIC VEHICLE CONDUCTIVE CHARGING SYSTEM ». Cela permet de garantir une 
-sécurité maximale des utilisateurs lors de la recharge de leur véhicule électrique. La Figure 3 représente la 
-connectique entre une borne et un véhicule.
-
-Code admin =1234 
+*
 */
 
 #include "lecteurcarte.h"

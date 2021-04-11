@@ -4,7 +4,7 @@
 /*!
 * \author SEWODA & ACHARI
 * \date 01 April 2021
-* \version 1.0
+* \version 1.3
 * \class Prise
 * \file prise.h
 * \brief Cette classe gere les etats de la prise de la borne de

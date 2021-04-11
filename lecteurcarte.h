@@ -1,6 +1,15 @@
 #ifndef LECTEURCARTE_H
 #define LECTEURCARTE_H
 
+/*!
+* \author SEWODA & ACHARI
+* \date 01 April 2021
+* \version 1.3
+* \class LecteurCarte
+* \file lecteurcarte.h
+* \brief Cette classe permet d'interagir avec la borne avec la carte client la borne de recharge.
+*/
+
 #include <lcarte.h>
 #include <iostream>
 
@@ -27,10 +36,11 @@ private:
 	* \brief Lecteur de carte
 	*
 	* Cette fonction represente le point d'entree de rechargement d'un vehicule. Elle fait appel a d'autre fonction pour :
-authentifier()
-charger()
-reprise()
-deconnecter()
+	*
+	* authentifier()
+	* charger()
+	* reprise()
+	* deconnecter()
 	*
 	*/
 	void lire_carte();
@@ -39,7 +49,7 @@ deconnecter()
 	* \fn void reprise()
 	* \brief Permet deverrouiller la trappe pour que l'utilisateur
 	* reprenne son vehicule.
-	* Pour etre sur que c'est l'utilisateur que le vehicule appartient
+	* Pour etre sur que le vehicule appartient
 	* a ce dernier, on verifie egalement que la carte inserer
 	* correspond a la derniere carte inserer.
 	*/
