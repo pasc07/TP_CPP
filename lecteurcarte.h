@@ -6,8 +6,8 @@
 
 #include "voyants.h"
 #include "timer.h"
-#include "baseclient.h"
 #include "boutons.h"
+#include "baseclient.h"
 #include "generateur_save.h"
 
 using namespace std;
@@ -16,7 +16,6 @@ class LecteurCarte
 private:
 	
 	int numero_courant;
-	Boutons boutons;
 	Prise prise;
 	BaseClient baseclient;
 	Voyants voyants;

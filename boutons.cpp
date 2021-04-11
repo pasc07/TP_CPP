@@ -15,8 +15,8 @@ void Boutons::initialiser(){
 }
 
 	int Boutons::charge(){
-		int status;
 		initialiser();
+		int status;
 		status=bouton->bouton_charge;
 		bouton->bouton_charge=0;
 		return status;
