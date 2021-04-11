@@ -1,0 +1,69 @@
+\hypertarget{class_voyants}{}\doxysection{Voyants Class Reference}
+\label{class_voyants}\index{Voyants@{Voyants}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_voyants_a550aa4551f1b55da3e677d6b56262c4d}{initialiser}} ()
+\begin{DoxyCompactList}\small\item\em Permet de configurer l\textquotesingle{}acces a la memoire partagee a l\textquotesingle{}aide la variable shmid (share memory id) pour permettre de communiquer avec la carte. Un message d\textquotesingle{}erreur s\textquotesingle{}affiche en cas de probleme d\textquotesingle{}acces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_voyants_aed7b8fd98779dea9c359a9d995a0da6a}{set\+\_\+charge}} (led led\+Coul)
+\begin{DoxyCompactList}\small\item\em Allume le voyant charge quand le vehicule charge. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_voyants_a527ce5c953f6ae0525709bc8ded5a219}\label{class_voyants_a527ce5c953f6ae0525709bc8ded5a219}} 
+void {\bfseries set\+\_\+dispo} (led led\+Coul)
+\item 
+\mbox{\Hypertarget{class_voyants_aa70caee71aa462737aa0cb5b03860a33}\label{class_voyants_aa70caee71aa462737aa0cb5b03860a33}} 
+void {\bfseries blink\+\_\+charge} ()
+\item 
+\mbox{\Hypertarget{class_voyants_a90de83497234a87bc23428b341795571}\label{class_voyants_a90de83497234a87bc23428b341795571}} 
+void {\bfseries set\+\_\+defaut} ()
+\item 
+\mbox{\Hypertarget{class_voyants_a5e926e0ed8ec69a09fd1661725c13610}\label{class_voyants_a5e926e0ed8ec69a09fd1661725c13610}} 
+int {\bfseries dispo} ()
+\item 
+\mbox{\Hypertarget{class_voyants_ac0960e6d7a17e877024cbc0ff5f42cb7}\label{class_voyants_ac0960e6d7a17e877024cbc0ff5f42cb7}} 
+void \mbox{\hyperlink{class_voyants_ac0960e6d7a17e877024cbc0ff5f42cb7}{blink\+\_\+defaut}} ()
+\begin{DoxyCompactList}\small\item\em clignoter la LED defaut pendant 8 secondes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_voyants_a550aa4551f1b55da3e677d6b56262c4d}\label{class_voyants_a550aa4551f1b55da3e677d6b56262c4d}} 
+\index{Voyants@{Voyants}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Voyants@{Voyants}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void Voyants\+::initialiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permet de configurer l\textquotesingle{}acces a la memoire partagee a l\textquotesingle{}aide la variable shmid (share memory id) pour permettre de communiquer avec la carte. Un message d\textquotesingle{}erreur s\textquotesingle{}affiche en cas de probleme d\textquotesingle{}acces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_voyants_aed7b8fd98779dea9c359a9d995a0da6a}\label{class_voyants_aed7b8fd98779dea9c359a9d995a0da6a}} 
+\index{Voyants@{Voyants}!set\_charge@{set\_charge}}
+\index{set\_charge@{set\_charge}!Voyants@{Voyants}}
+\doxysubsubsection{\texorpdfstring{set\_charge()}{set\_charge()}}
+{\footnotesize\ttfamily void Voyants\+::set\+\_\+charge (\begin{DoxyParamCaption}\item[{led}]{led\+Coul }\end{DoxyParamCaption})}
+
+
+
+Allume le voyant charge quand le vehicule charge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & led\+Coul\+: qui represente la couleur a afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{voyants_8h}{voyants.\+h}}\item 
+voyants.\+cpp\end{DoxyCompactItemize}
