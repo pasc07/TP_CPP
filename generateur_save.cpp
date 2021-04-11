@@ -29,23 +29,12 @@ void GenerateurSave::ouvert(){
 	io->contacteur_AC=0;
 }
 
-/*!
-* \fn
-* \brief
-* \param
-* \return
-*/
+
 void GenerateurSave::fermer(){
 	initialiser();
 	io->contacteur_AC=1;
 }
 
-/*!
-* \fn
-* \brief
-* \param
-* \return
-*/
 void GenerateurSave::charger(){
 	Etat etat =Etat1;
 	initialiser();

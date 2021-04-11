@@ -29,8 +29,8 @@ void LecteurCarte::lire_carte()
 		{
 			cout<<"Authentification reussi!"<<endl;
 			voyants.blink_charge();
-			int status_bouton=boutons.charge();
-			if(status_bouton==1){
+			//int status_bouton=boutons.charge();
+			if(voyants.getStatus_bouton()==1){
 				generateurSave.charger();
 				reprise();
 				generateurSave.deconnecter();
@@ -59,6 +59,7 @@ void LecteurCarte::reprise(){
 		if((reussi==0)||(numero!=numero_courant))
 		{
 			voyants.blink_defaut();
+			cout<<"Veuillez inserer la bonne carte [numero]"<<endl;
 		}
 		else
 		{

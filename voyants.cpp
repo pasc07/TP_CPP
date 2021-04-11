@@ -37,6 +37,9 @@ void Voyants::blink_charge(){
 			initialiser();
 			leds->led_charge=OFF;
 		n++;
+		status_bouton=boutons.charge();
+		if(status_bouton==1)
+			break;
 	}
 }
 
@@ -69,3 +72,7 @@ void Voyants::blink_defaut(){
 	}
 
 }
+
+int Voyants::getStatus_bouton(){
+			return status_bouton;
+		}
